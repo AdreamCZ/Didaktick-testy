@@ -6,13 +6,23 @@ def Menu():
 
 abc = ["A)","B)","C)","D)","E)","F)"]
 index = 0
-file = open("otazky.txt","w")
+file = open("otazky.txt","w+")
+file.close()
+
 
 def Que_text(): ##Vložení otázky práce s textem
     qfull = ""
+    file = open("otazky.txt","r")
+    if(file.read()!=""):
+        index = file.read()[file.read().find("Otazka",-1)+6:]
+    else:
+        index = 0
+    
+    file = open("otazky.txt","w")
+        
     text = input("zadejte výchozí text/y k otázkám")
     answer = 0
-    while(input("pokračovat ? (Y/N)(A)B)C) ")!="N"):
+    while(input("pokračovat ? (Y/N)(A)B)C) ").upper()!="N"):
         file.write("Otazka")
         file.write(str(index))
         file.write("{\n")
@@ -26,7 +36,10 @@ def Que_text(): ##Vložení otázky práce s textem
         file.write(int(qfull[0]))
         file.write("\"\n")
         qstart = 0
-        if qfull.find("bod")>qfull.find("body")?qstart=qfull.find("bod")+4:qstart=qfull.find("body")+5 ##začátek textu otázky
+        if qfull.find("bod")>qfull.find("body"): ##začátek textu otázky
+            qstart=qfull.find("bod")+4
+        else:
+            qstart=qfull.find("body")+5 
         question = qfull[slice(qstart,qfull.find("A)"))] ##Text otázky
         qfull = qfull[qfull.find("A)"):]
         file.write("question=\"")
@@ -53,7 +66,7 @@ def Que_text(): ##Vložení otázky práce s textem
         file.write("}")
         index +=1
         
-    while(input("pokračovat ? (Y/N)(Otevřená otázka) ")!="N"): #VKládání otázky s otevřenoou odpovědí
+    while(input("pokračovat ? (Y/N)(Otevřená otázka)").upper()!="N"): #VKládání otázky s otevřenoou odpovědí
         file.write("Otazka")
         file.write(str(index))
         file.write("{\n")
@@ -69,7 +82,11 @@ def Que_text(): ##Vložení otázky práce s textem
         file.write("\"\n")
         
         qstart = 0
-        if qfull.find("bod")>qfull.find("body")?qstart=qfull.find("bod")+4:qstart=qfull.find("body")+5 ##začátek textu otázky
+        
+        if qfull.find("bod")>qfull.find("body"): ##začátek textu otázky
+            qstart=qfull.find("bod")+4
+        else:
+            qstart=qfull.find("body")+5 
         
         file.write("question=\"")
         file.write(qfull[qstart:])
@@ -81,7 +98,7 @@ def Que_text(): ##Vložení otázky práce s textem
         file.write("}")
         index+=1
         
-    while(input("pokračovat ? (Y/N)(Ano/Ne otázka)" != "N"): ##Otázka Ano ne
+    while(input("pokračovat ? (Y/N)(Ano/Ne otázka)").upper() != "N"): ##Otázka Ano ne
         file.write("Otazka")
         file.write(str(index))
         file.write("{\n")
@@ -99,7 +116,10 @@ def Que_text(): ##Vložení otázky práce s textem
         file.write("type=\"ANO/NE\",\n")
           
         qstart = 0
-        if qfull.find("bod")>qfull.find("body")?qstart=qfull.find("bod")+4:qstart=qfull.find("body")+5 ##začátek textu otázky
+        if qfull.find("bod")>qfull.find("body"): ##začátek textu otázky
+            qstart=qfull.find("bod")+4
+        else:
+            qstart=qfull.find("body")+5 
         
         file.write("question=\"") ##Text otázky
         file.write(qfull[qstart:])
@@ -115,6 +135,14 @@ def Que_text(): ##Vložení otázky práce s textem
     Menu()
    
 Menu()
+
+
+
+        
+
+
+
+
 
 
 
