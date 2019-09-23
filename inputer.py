@@ -16,12 +16,18 @@ def Que_text(): ##Vložení otázky práce s textem
         file.write("Otazka")
         file.write(str(index))
         file.write("{\n")
-        file.write("type=\"text\",\n")
+        file.write("type=\"text\",\n") ##Vložení výchozího textu
         file.write("text=\"")
         file.write(text)
         file.write("\",\n")
         qfull=input("Zadejte text otázky formátu A)B)C)D)")
-        question = qfull[slice(0,qfull.find("A)"))]
+        ##Počet bodů .. Nutné vložení na začátku textu
+        file.write("bodu=\"")
+        file.write(int(qfull[0]))
+        file.write("\"\n")
+        qstart = 0
+        if qfull.find("bod")>qfull.find("body")?qstart=qfull.find("bod")+4:qstart=qfull.find("body")+5 ##začátek textu otázky
+        question = qfull[slice(qstart,qfull.find("A)"))] ##Text otázky
         qfull = qfull[qfull.find("A)"):]
         file.write("question=\"")
         file.write(question)
@@ -55,10 +61,20 @@ def Que_text(): ##Vložení otázky práce s textem
         file.write(text)
         file.write("\",\n")
         file.write("type=\"otevrena\",\n")
+        
         qfull=input("Zadejte text otázky")
+        ##Počet bodů .. Nutné vložení na začátku textu
+        file.write("bodu=\"")
+        file.write(int(qfull[0]))
+        file.write("\"\n")
+        
+        qstart = 0
+        if qfull.find("bod")>qfull.find("body")?qstart=qfull.find("bod")+4:qstart=qfull.find("body")+5 ##začátek textu otázky
+        
         file.write("question=\"")
-        file.write(qfull)
+        file.write(qfull[qstart:])
         file.write("\",\n")
+        
         file.write("correct=\"")
         file.write(input("Zadejte správnou odpověď: "))
         file.write("\"\n")
@@ -72,7 +88,28 @@ def Que_text(): ##Vložení otázky práce s textem
         file.write("text=\"")
         file.write(text)
         file.write("\",\n")
+          
+        qfull= input("zadejte text otázky (ANO/NE) (Body na začátku)")
+        
+        ##Počet bodů .. Nutné vložení na začátku textu
+        file.write("bodu=\"")
+        file.write(int(qfull[0]))
+        file.write("\"\n")
+          
         file.write("type=\"ANO/NE\",\n")
+          
+        qstart = 0
+        if qfull.find("bod")>qfull.find("body")?qstart=qfull.find("bod")+4:qstart=qfull.find("body")+5 ##začátek textu otázky
+        
+        file.write("question=\"") ##Text otázky
+        file.write(qfull[qstart:])
+        file.write("\",\n")
+          
+        file.write("correct=\"")
+        file.write(input("Zadejte správé odpovědi (ano,ne,ne) : "))
+        file.write("\"\n")
+        file.write("}")
+        
     
     file.close()
     Menu()
