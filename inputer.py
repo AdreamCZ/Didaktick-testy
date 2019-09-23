@@ -12,14 +12,14 @@ def Que_text(): ##Vložení otázky práce s textem
     qfull = ""
     text = input("zadejte výchozí text/y k otázkám")
     answer = 0
-    while(input("pokračovat ? (Y/N)")!="N"):
+    while(input("pokračovat ? (Y/N)(A)B)C) ")!="N"):
         file.write("Otazka")
         file.write(str(index))
         file.write("{\n")
-        file.write("type=\"text\",")
+        file.write("type=\"text\",\n")
         file.write("text=\"")
         file.write(text)
-        file.write("\",")
+        file.write("\",\n")
         qfull=input("Zadejte text otázky formátu A)B)C)D)")
         question = qfull[slice(0,qfull.find("A)"))]
         qfull = qfull[qfull.find("A)"):]
@@ -40,8 +40,43 @@ def Que_text(): ##Vložení otázky práce s textem
         file.write(qfull[qfull.find(abc[answer]):])
         file.write("\",\n")
         qfull = ""
+        ##Vložení správné odpovědi
+        file.write("correct=\"")
+        file.write(input("Zadejte správnou odpověď: "))
+        file.write("\"\n")
         file.write("}")
+        index +=1
+        
+    while(input("pokračovat ? (Y/N)(Otevřená otázka) ")!="N"): #VKládání otázky s otevřenoou odpovědí
+        file.write("Otazka")
+        file.write(str(index))
+        file.write("{\n")
+        file.write("text=\"")
+        file.write(text)
+        file.write("\",\n")
+        file.write("type=\"otevrena\",\n")
+        qfull=input("Zadejte text otázky")
+        file.write("question=\"")
+        file.write(qfull)
+        file.write("\",\n")
+        file.write("correct=\"")
+        file.write(input("Zadejte správnou odpověď: "))
+        file.write("\"\n")
+        file.write("}")
+        index+=1
+        
+    while(input("pokračovat ? (Y/N)(Ano/Ne otázka)" != "N"): ##Otázka Ano ne
+        file.write("Otazka")
+        file.write(str(index))
+        file.write("{\n")
+        file.write("text=\"")
+        file.write(text)
+        file.write("\",\n")
+        file.write("type=\"ANO/NE\",\n")
+    
     file.close()
+    Menu()
+   
 Menu()
 
 
