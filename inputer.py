@@ -37,9 +37,9 @@ def Que_text(): ##Vložení otázky práce s textem
         file.write("\"\n")
         qstart = 0
         if qfull.find("bod")>qfull.find("body"): ##začátek textu otázky
-            qstart=qfull.find("bod")+4
+            qstart=qfull.find("bod")+6
         else:
-            qstart=qfull.find("body")+5 
+            qstart=qfull.find("body")+7
         question = qfull[slice(qstart,qfull.find("A)"))] ##Text otázky
         qfull = qfull[qfull.find("A)"):]
         file.write("question=\"")
@@ -78,15 +78,15 @@ def Que_text(): ##Vložení otázky práce s textem
         qfull=input("Zadejte text otázky")
         ##Počet bodů .. Nutné vložení na začátku textu
         file.write("bodu=\"")
-        file.write(int(qfull[0]))
+        file.write(qfull[0])
         file.write("\"\n")
         
         qstart = 0
         
         if qfull.find("bod")>qfull.find("body"): ##začátek textu otázky
-            qstart=qfull.find("bod")+4
+            qstart=qfull.find("bod")+6
         else:
-            qstart=qfull.find("body")+5 
+            qstart=qfull.find("body")+7
         
         file.write("question=\"")
         file.write(qfull[qstart:])
@@ -117,9 +117,9 @@ def Que_text(): ##Vložení otázky práce s textem
           
         qstart = 0
         if qfull.find("bod")>qfull.find("body"): ##začátek textu otázky
-            qstart=qfull.find("bod")+4
+            qstart=qfull.find("bod")+6
         else:
-            qstart=qfull.find("body")+5 
+            qstart=qfull.find("body")+7
         
         file.write("question=\"") ##Text otázky
         file.write(qfull[qstart:])
@@ -139,15 +139,6 @@ Menu()
 
 
         
-
-
-
-
-
-
-
-        
-
 
 
 
