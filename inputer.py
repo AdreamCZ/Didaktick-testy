@@ -1,4 +1,6 @@
 import string
+import re 
+
 def Menu():
     typ = int(input("Jaký typ otázky budeš zadávat ? (1-Práce s textem, 2-normální)"))
     if(typ==1):
@@ -33,7 +35,7 @@ def Que_text(): ##Vložení otázky práce s textem
         qfull=input("Zadejte text otázky formátu A)B)C)D)")
         ##Počet bodů .. Nutné vložení na začátku textu
         file.write("bodu=\"")
-        file.write(int(qfull[0]))
+        file.write(re.search(r"\d bod",qfull).group()[0])
         file.write("\"\n")
         qstart = 0
         if qfull.find("bod")>qfull.find("body"): ##začátek textu otázky
@@ -78,7 +80,7 @@ def Que_text(): ##Vložení otázky práce s textem
         qfull=input("Zadejte text otázky")
         ##Počet bodů .. Nutné vložení na začátku textu
         file.write("bodu=\"")
-        file.write(qfull[0])
+        file.write(re.search(r"\d bod",qfull).group()[0])
         file.write("\"\n")
         
         qstart = 0
@@ -110,7 +112,7 @@ def Que_text(): ##Vložení otázky práce s textem
         
         ##Počet bodů .. Nutné vložení na začátku textu
         file.write("bodu=\"")
-        file.write(int(qfull[0]))
+        file.write(re.search(r"\d bod",qfull).group()[0])
         file.write("\"\n")
           
         file.write("type=\"ANO/NE\",\n")
@@ -121,10 +123,22 @@ def Que_text(): ##Vložení otázky práce s textem
         else:
             qstart=qfull.find("body")+7
         
-        file.write("question=\"") ##Text otázky
-        file.write(qfull[qstart:])
+        file.write("question=\"") ##Text otázky ( úvod k dalším otázkám)
+        file.write(qfull[qstart:qfull.find("A N",-1)])
         file.write("\",\n")
-          
+        l = True
+        while(l):
+            file.write("subquestion")
+            sqnumindex = re.search(r"\d.\d",qfull).span()[1] ##Číslo podotázky
+            file.write(qfull[sqnumindex]) 
+            file.write("=\"")
+            qfull = qfull[sqnumindex+1:] ##zkrácení o úvod první číslo
+            nextsq = re.search(r"\d.\d",qfull).span()
+            file.write(qfull[sqnumindex+1:nextsq[0]-1]) ##Text podotázky
+            file.write("\",\n")
+            if(nextsq == None): ##Pokud není další subotázka 
+                l = False ##přestaň
+        
         file.write("correct=\"")
         file.write(input("Zadejte správé odpovědi (ano,ne,ne) : "))
         file.write("\"\n")
@@ -135,6 +149,13 @@ def Que_text(): ##Vložení otázky práce s textem
     Menu()
    
 Menu()
+
+
+        
+
+
+
+
 
 
 
