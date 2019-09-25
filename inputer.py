@@ -32,11 +32,11 @@ def Que_text(): ##Vložení otázky práce s textem
         file.write("text=\"")
         file.write(text)
         file.write("\",\n")
-        qfull=input("Zadejte text otázky formátu A)B)C)D)")
+        qfull=input("Zadejte text otázky formátu A)B)C)D)").replace('\n', ' ').replace('\r', '')
         ##Počet bodů .. Nutné vložení na začátku textu
         file.write("bodu=\"")
         file.write(re.search(r"\d bod",qfull).group()[0])
-        file.write("\"\n")
+        file.write("\",\n")
         qstart = 0
         if qfull.find("bod")>qfull.find("body"): ##začátek textu otázky
             qstart=qfull.find("bod")+6
@@ -48,7 +48,7 @@ def Que_text(): ##Vložení otázky práce s textem
         file.write(question)
         file.write("\",\n")
         while(qfull.find(abc[answer+1]) != -1):
-            file.write(abc[answer])
+            file.write(abc[answer][0])
             file.write("=")
             file.write("\"")
             file.write(qfull[qfull.find(abc[answer]):qfull.find(abc[answer+1])]) ##Text odpovědi
@@ -63,8 +63,8 @@ def Que_text(): ##Vložení otázky práce s textem
         qfull = ""
         ##Vložení správné odpovědi
         file.write("correct=\"")
-        file.write(input("Zadejte správnou odpověď: "))
-        file.write("\"\n")
+        file.write(input("Zadejte správnou odpověď: ")).replace('\n', ' ').replace('\r', '')
+        file.write("\",\n")
         file.write("}")
         index +=1
         
@@ -77,11 +77,11 @@ def Que_text(): ##Vložení otázky práce s textem
         file.write("\",\n")
         file.write("type=\"otevrena\",\n")
         
-        qfull=input("Zadejte text otázky")
+        qfull=input("Zadejte text otázky").replace('\n', ' ').replace('\r', '')
         ##Počet bodů .. Nutné vložení na začátku textu
         file.write("bodu=\"")
         file.write(re.search(r"\d bod",qfull).group()[0])
-        file.write("\"\n")
+        file.write("\",\n")
         
         qstart = 0
         
@@ -96,7 +96,7 @@ def Que_text(): ##Vložení otázky práce s textem
         
         file.write("correct=\"")
         file.write(input("Zadejte správnou odpověď: "))
-        file.write("\"\n")
+        file.write("\",\n")
         file.write("}")
         index+=1
         
@@ -108,12 +108,12 @@ def Que_text(): ##Vložení otázky práce s textem
         file.write(text)
         file.write("\",\n")
           
-        qfull= input("zadejte text otázky (ANO/NE) (Body na začátku)")
+        qfull= input("zadejte text otázky (ANO/NE) (Body na začátku)").replace('\n', ' ').replace('\r', '')
         
         ##Počet bodů .. Nutné vložení na začátku textu
         file.write("bodu=\"")
         file.write(re.search(r"\d bod",qfull).group()[0])
-        file.write("\"\n")
+        file.write("\",\n")
           
         file.write("type=\"ANO/NE\",\n")
           
@@ -133,15 +133,18 @@ def Que_text(): ##Vložení otázky práce s textem
             file.write(qfull[sqnumindex]) 
             file.write("=\"")
             qfull = qfull[sqnumindex+1:] ##zkrácení o úvod první číslo
-            nextsq = re.search(r"\d.\d",qfull).span()
+            try:
+                nextsq = re.search(r"\d.\d",qfull).span()
+            except:
+                nextsq = None
+                l = False
             file.write(qfull[sqnumindex+1:nextsq[0]-1]) ##Text podotázky
             file.write("\",\n")
-            if(nextsq == None): ##Pokud není další subotázka 
-                l = False ##přestaň
+
         
         file.write("correct=\"")
         file.write(input("Zadejte správé odpovědi (ano,ne,ne) : "))
-        file.write("\"\n")
+        file.write("\",\n")
         file.write("}")
         
     
