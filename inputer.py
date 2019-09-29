@@ -2,7 +2,18 @@ import string
 import re 
 import sys  
 
+filepath = "otazky.txt"
+index = 0
 def Menu():
+    try:
+        file = open(filepath,"r")
+    except:
+        file = open(filepath,"wr+")
+    if(file.read()!=""):
+        index = int(file.read()[file.read().find("Otazka",-1)+6])
+    else:
+        index = 0
+
 
     typ = input("Jaký typ otázky budeš zadávat ? (1-Práce s textem, 2-normální, cokoliv jiného = konec)")
     if(typ=="1"):
@@ -15,28 +26,21 @@ def Menu():
         exit()
 
 abc = ["A)","B)","C)","D)","E)","F)"]
-index = 0
-file = open("otazky.txt","w+")
-file.close()
 
 
 def Que_text(): ##Vložení otázky práce s textem
     qfull = ""
-    file = open("otazky.txt","r")
-    if(file.read()!=""):
-        index = file.read()[file.read().find("Otazka",-1)+6:]
-    else:
-        index = 0
+
     
-    file = open("otazky.txt","w")
+    file = open(filepath,"w")
         
     print("Zadejte výchoží text k otázkám")
     text = sys.stdin.read()
     answer = 0
     while(True):
-        print("Otázka formátu A)B)C) (N=další)")
+        print("Otázka formátu A)B)C) (N=další)") #ABC
         qfull = sys.stdin.read()
-        if(qfull.upper().replace("\n","") == "N" or qfull == ""):
+        if(qfull.upper().replace("\n","") == "N" or qfull == "" or len(qfull)<5):
             break
         file.write("Otazka")
         file.write(str(index))
@@ -84,7 +88,7 @@ def Que_text(): ##Vložení otázky práce s textem
     while(True): #VKládání otázky s otevřenoou odpovědí
         print("Otevřená otázka (N=pokračovat na další)")
         qfull = sys.stdin.read()
-        if(qfull.upper().replace("\n","") == "N" or qfull == ""):
+        if(qfull.upper().replace("\n","") == "N" or qfull == "" or len(qfull) < 5):
             break
         file.write("Otazka")
         file.write(str(index))
@@ -119,7 +123,7 @@ def Que_text(): ##Vložení otázky práce s textem
     while(True): ##Otázka Ano ne
         print("Ano/Ne otázka (N=další typ)")
         qfull = sys.stdin.read()
-        if(qfull.upper().replace("\n","") == "N" or qfull == ""):
+        if(qfull.upper().replace("\n","") == "N" or qfull == "" or len(qfull) < 5):
             break
         file.write("Otazka")
         file.write(str(index))
@@ -164,19 +168,22 @@ def Que_text(): ##Vložení otázky práce s textem
 
         
         file.write("correct=\"")
-        file.write(input("Zadejte správé odpovědi (ano,ne,ne) : "))
+        file.write(re.sub(r"[^A-Za-z]","",input("Zadejte správé odpovědi (ANANA) : ")))
         file.write("\",\n")
         file.write("}")
+        file.close()
         
     
 
     Menu()
 
 def Question():
+    file = open(filepath,"w")
+
     while(True):
         print("Otázka formátu A)B)C) (N=další)")
         qfull = sys.stdin.read()
-        if(qfull.upper().replace("\n","") == "N" or qfull == ""):
+        if(qfull.upper().replace("\n","") == "N" or qfull == "" or len(qfull) < 5):
             break
         file.write("Otazka")
         file.write(str(index))
@@ -222,7 +229,7 @@ def Question():
     while(True): #VKládání otázky s otevřenoou odpovědí
         print("Otázka s otevřenou odpovědí (N=další)")
         qfull = sys.stdin.read()
-        if(qfull.upper().replace("\n","") == "N" or qfull == ""):
+        if(qfull.upper().replace("\n","") == "N" or qfull == "" or len(qfull) < 5):
             break
         file.write("Otazka")
         file.write(str(index))
