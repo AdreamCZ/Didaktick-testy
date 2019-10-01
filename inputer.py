@@ -173,6 +173,62 @@ def Que_text(): ##Vložení otázky práce s textem
         file.write("}")
         file.close()
         
+        
+    while(True): #Otázka s přiřazováním možností
+        answer = 0
+        print("Otázka formátu Přiřazování ukázek (N=další)") 
+        qfull = sys.stdin.read()
+        if(qfull.upper().replace("\n","") == "N" or qfull == "" or len(qfull)<5):
+            break
+        file.write("Otazka")
+        file.write(str(index))
+        file.write("{\n")
+        file.write("type=\"serad\",\n")
+        file.write("text=\"")
+        file.write(text)
+        file.write("\",\n")
+
+        ##Počet bodů .. Nutné vložení na začátku textu
+        file.write("bodu=\"")
+        file.write(re.search(r"\d bod",qfull).group()[0])
+        file.write("\",\n")
+        qstart = 0
+        if qfull.find("bod")>qfull.find("body"): ##začátek textu otázky
+            qstart=qfull.find("bod")+6
+        else:
+            qstart=qfull.find("body")+7
+        question = qfull[slice(qstart,qfull.find("A)"))] ##Text otázky
+        qfull = qfull[qfull.find("A)"):]
+        file.write("question=\"")
+        file.write(question)
+        file.write("\",\n")
+        while(qfull.find(abc[answer+1]) != -1):
+            file.write(abc[answer][0])
+            file.write("=")
+            file.write("\"")
+            file.write(qfull[qfull.find(abc[answer]):qfull.find(abc[answer+1])]) ##Text odpovědi
+            file.write("\",\n")
+            qfull = qfull[qfull.find(abc[answer+1]):] ## Odstranění již zpracované části
+            answer += 1
+        file.write(abc[answer]) ##Poslední odpověď 
+        file.write("=")
+        file.write("\"")
+        file.write(qfull[qfull.find(abc[answer]):])
+        file.write("\",\n")
+        qfull = ""
+        ##Vložení správné odpovědi
+        file.write("correct=\"")
+        odpovedi = input("Zadejte správné pořadí: ")
+        odpovedisor = ""
+        for i in range(answer):
+            c = re.search(r"\d.\d").span()[1]
+            odpovedisor += odpovedi[c+1]
+            odpovedi = odpovedi[c+1:]
+        file.write(odpovedisor)
+        file.write("\",\n")
+        file.write("}")
+        index +=1
+        
     
 
     Menu()
