@@ -168,7 +168,13 @@ def Que_text(): ##Vložení otázky práce s textem
 
         
         file.write("correct=\"")
-        file.write(re.sub(r"[^A-Za-z]","",input("Zadejte správé odpovědi (ANANA) : ")))
+        odpovedi = input("Zadejte správné odpovědi: ")
+        odpovedisor = ""
+        for i in range(answer):
+            c = re.search(r"\d.\d",odpovedi).span()[1]
+            odpovedisor += odpovedi[c+1]
+            odpovedi = odpovedi[c+1:]
+        file.write(odpovedisor)
         file.write("\",\n")
         file.write("}")
         file.close()
@@ -221,7 +227,7 @@ def Que_text(): ##Vložení otázky práce s textem
         odpovedi = input("Zadejte správné pořadí: ")
         odpovedisor = ""
         for i in range(answer):
-            c = re.search(r"\d.\d").span()[1]
+            c = re.search(r"\d.\d",odpovedi).span()[1]
             odpovedisor += odpovedi[c+1]
             odpovedi = odpovedi[c+1:]
         file.write(odpovedisor)
