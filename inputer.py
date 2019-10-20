@@ -10,7 +10,13 @@ def Menu():
     except:
         file = open(filepath,"wr+")
     if(file.read()!=""):
-        index = int(file.read()[file.read().find("Otazka",-1)+6])
+        si = 0
+        _index = 0
+        while(_index != -1):
+            if(_index != -1):
+                index = _index
+                si = _index
+            _index = int(file.read()[file.read().find("Otazka",si)+6])
     else:
         index = 0
 
@@ -64,19 +70,17 @@ def Que_text(): ##Vložení otázky práce s textem
         file.write("question=\"")
         file.write(question)
         file.write("\",\n")
+        file.write("options=[\"")
         while(qfull.find(abc[answer+1]) != -1):
-            file.write(abc[answer][0])
-            file.write("=")
             file.write("\"")
             file.write(qfull[qfull.find(abc[answer]):qfull.find(abc[answer+1])]) ##Text odpovědi
-            file.write("\",\n")
+            file.write("\",")
             qfull = qfull[qfull.find(abc[answer+1]):] ## Odstranění již zpracované části
             answer += 1
-        file.write(abc[answer]) ##Poslední odpověď 
-        file.write("=")
+        ##Poslední odpověď 
         file.write("\"")
         file.write(qfull[qfull.find(abc[answer]):])
-        file.write("\",\n")
+        file.write("\"]\n")
         qfull = ""
         ##Vložení správné odpovědi
         file.write("correct=\"")
@@ -208,19 +212,17 @@ def Que_text(): ##Vložení otázky práce s textem
         file.write("question=\"")
         file.write(question)
         file.write("\",\n")
+        file.write("options=[")
         while(qfull.find(abc[answer+1]) != -1):
-            file.write(abc[answer][0])
-            file.write("=")
             file.write("\"")
             file.write(qfull[qfull.find(abc[answer]):qfull.find(abc[answer+1])]) ##Text odpovědi
-            file.write("\",\n")
+            file.write("\",")
             qfull = qfull[qfull.find(abc[answer+1]):] ## Odstranění již zpracované části
             answer += 1
-        file.write(abc[answer]) ##Poslední odpověď 
-        file.write("=")
+         ##Poslední odpověď 
         file.write("\"")
         file.write(qfull[qfull.find(abc[answer]):])
-        file.write("\",\n")
+        file.write("\",]")
         qfull = ""
         ##Vložení správné odpovědi
         file.write("correct=\"")
@@ -244,6 +246,7 @@ def Question():
 
     while(True):
         print("Otázka formátu A)B)C) (N=další)")
+        answer = 0
         qfull = sys.stdin.read()
         if(qfull.upper().replace("\n","") == "N" or qfull == "" or len(qfull) < 5):
             break
@@ -266,19 +269,17 @@ def Question():
         file.write("question=\"")
         file.write(question)
         file.write("\",\n")
+        file.write("options=[\"")
         while(qfull.find(abc[answer+1]) != -1):
-            file.write(abc[answer])
-            file.write("=")
             file.write("\"")
             file.write(qfull[qfull.find(abc[answer]):qfull.find(abc[answer+1])]) ##Text odpovědi
-            file.write("\",\n")
+            file.write("\",")
             qfull = qfull[qfull.find(abc[answer+1]):] ## Odstranění již zpracované části
             answer += 1
-        file.write(abc[answer]) ##Poslední odpověď 
-        file.write("=")
+        ##Poslední odpověď 
         file.write("\"")
         file.write(qfull[qfull.find(abc[answer]):])
-        file.write("\",\n")
+        file.write("\"]\n")
         qfull = ""
         ##Vložení správné odpovědi
         file.write("correct=\"")
@@ -290,15 +291,13 @@ def Question():
 
     while(True): #VKládání otázky s otevřenoou odpovědí
         print("Otázka s otevřenou odpovědí (N=další)")
+        answer = 0
         qfull = sys.stdin.read()
         if(qfull.upper().replace("\n","") == "N" or qfull == "" or len(qfull) < 5):
             break
         file.write("Otazka")
         file.write(str(index))
         file.write("{\n")
-        file.write("text=\"")
-        file.write(text)
-        file.write("\",\n")
         file.write("type=\"otevrena\",\n")
         ##Počet bodů .. Nutné vložení na začátku textu
         file.write("bodu=\"")
