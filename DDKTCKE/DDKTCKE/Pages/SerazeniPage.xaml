@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:converters="clr-namespace:DDKTCKE"
+             mc:Ignorable="d"
+             x:Class="DDKTCKE.Pages.SerazeniPage"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:ColorConverter x:Key="ColorConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout x:Name="myStackLayout" >
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Fill" VerticalOptions="StartAndExpand">
+                <Label Text="{Binding Body}"
+                    HorizontalOptions="StartAndExpand"
+                   FontSize="Small"/>
+
+
+                <Label Text="{Binding Uspesnost}"
+                           FontSize="Small"
+                       HorizontalOptions="CenterAndExpand"/>
+
+                <Label Text=" "
+                       HorizontalOptions="EndAndExpand"/>
+            </StackLayout>
+            <Label Text="{Binding Ukol}"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" 
+                FontSize="Medium"
+                TextColor="Black"
+               Margin="15,3,15,3"/>
+            <Frame>
+                <syncfusion:SfListView x:Name="myListView" 
+                                   ItemsSource="{Binding Moznosti}"
+                                   DragStartMode="OnHold"
+                                   ItemSpacing="5,5,5,5"
+                                   AutoFitMode="Height"
+                                   >
+                    <syncfusion:SfListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.View>
+                            <Grid>
+                                <Label Text="{Binding Text}"
+                                       TextColor="Black"
+                                       FontSize="Small"
+                                       BackgroundColor="{Binding Barva, Converter={StaticResource ColorConverter}}"/>
+
+                            </Grid>
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </syncfusion:SfListView.ItemTemplate>
+                </syncfusion:SfListView>
+            </Frame>
+            <StackLayout Orientation="Horizontal">
+            <Label Text="{Binding Zdroj}"
+                       FontSize="Micro"/>
+                <Button Text="Nápověda"
+                    FontSize="Micro"
+                    Padding="0,0,0,0"
+                        Margin="0"
+                    HorizontalOptions="EndAndExpand"
+                        HeightRequest="25"
+                    Clicked="zobrazNavod"/>
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal" 
+                         HorizontalOptions="Fill"
+                         VerticalOptions="EndAndExpand"
+                         Margin="0"
+                         BackgroundColor="Gainsboro"
+                         >
+                <Button Text="&#8962;"
+                    HorizontalOptions="StartAndExpand"
+                    BackgroundColor="LightGray"
+                        Margin="0"
+                        CornerRadius="0"
+                    FontSize="Large"
+                        
+                        Clicked="Zpet"/>
+                <StackLayout Spacing="0">
+                    <Button Text="Kontrola"
+                    Clicked="KontrolaOdpovedi"
+                    VerticalOptions="Start"
+                    HorizontalOptions="CenterAndExpand"
+                    x:Name="Kontrola_butt"
+                    Margin="0,0,0,0"/>
+                    <Label Text="Autorem zadání je Cermat.cz"
+                       FontSize="Micro"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="EndAndExpand"
+                       HorizontalTextAlignment="Center"/>
+
+                </StackLayout>
+                <Button Text="	&#707;"
+                        Padding="0,5,0,0"
+                        Margin="0"
+                        CornerRadius="0"
+                    HorizontalOptions="EndAndExpand"
+                    FontSize="Title"
+                    BackgroundColor="Gray"
+                    BorderColor="Gray"
+                        x:Name="Pokracovat_butt"
+                        Clicked="Pokracovat"
+                        IsEnabled="False"
+                        
+                    />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

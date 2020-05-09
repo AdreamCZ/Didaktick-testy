@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:htmlLabel="clr-namespace:LabelHtml.Forms.Plugin.Abstractions;assembly=HtmlLabel.Forms.Plugin"
+             mc:Ignorable="d"
+             x:Class="DDKTCKE.Pages.OtevrenaPage"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <StackLayout x:Name="myStackLayout" Padding="5,5,5,5" >
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Fill" VerticalOptions="StartAndExpand">
+                <Label Text="{Binding Body}"
+                    HorizontalOptions="StartAndExpand"
+                   FontSize="Small"/>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Label Text="Správně:"
+                           FontSize="Small"/>
+                    <Label Text="{Binding Uspesnost}"
+                           FontSize="Small"/>
+                    <Label Text="%"
+                           FontSize="Small"/>
+                </StackLayout>
+            </StackLayout>
+            <Label Text="{Binding Ukol}"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" 
+                FontSize="Medium"
+                TextColor="Black"
+               Margin="15,5,15,5"/>
+            <StackLayout Orientation="Horizontal"
+                          HorizontalOptions="FillAndExpand"
+                         VerticalOptions="FillAndExpand">
+                <Entry x:Name="Vstup"
+                       HorizontalOptions="FillAndExpand"/>
+                <Label Text=""
+                   x:Name="SpravnaMark"
+                   HorizontalOptions="End"
+                   Margin="0,10,0,0"
+                   FontSize="Title"
+                  />
+
+                <Button Clicked="KontrolaOdpovedi"
+                        Text="&#8629;"
+                        HorizontalOptions="End"
+                        FontSize="Title"/>
+                
+            </StackLayout>
+            <Label Text=""
+                       x:Name="SpravnaOdpoved"
+                       FontSize="Medium"
+                       HorizontalOptions="Center"
+                       VerticalOptions="End"
+                   TextColor="Black"/>
+            <StackLayout Orientation="Horizontal" 
+                         HorizontalOptions="Fill"
+                         VerticalOptions="EndAndExpand">
+                <Button Text="&#8962;"
+                    HorizontalOptions="StartAndExpand"
+                    BackgroundColor="LightGray"
+                    FontSize="Large"
+                        Clicked="Zpet"/>
+                <Label Text="Autorem zadání je Cermat.cz"
+                       FontSize="Micro"
+                       VerticalOptions="End"
+                       HorizontalOptions="FillAndExpand"
+                       HorizontalTextAlignment="Center"/>
+                <Button Text="	&#707;"
+                        Padding="0,5,0,0"
+                    HorizontalOptions="EndAndExpand"
+                    FontSize="Title"
+                    BackgroundColor="Gray"
+                    BorderColor="Gray"
+                        x:Name="Pokracovat_butt"
+                        Clicked="Pokracovat"
+                        IsEnabled="False"
+                    />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

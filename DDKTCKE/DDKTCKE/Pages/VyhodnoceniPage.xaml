@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DDKTCKE.Pages.VyhodnoceniPage"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <StackLayout x:Name="mainStackLayout"
+                     Padding="10">
+            <Label Text="{Binding statusDokonceni}"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" 
+                FontSize="Medium"
+                TextColor="Black"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Získáno bodů : "
+                       HorizontalOptions="Start"/>
+                <Label Text="{Binding ziskanychBodu}"
+                       HorizontalOptions="Start"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Správně zodpovězeno : "
+                       HorizontalOptions="Start"/>
+                <Label Text="{Binding procentSpravne}"
+                       HorizontalOptions="Start"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Čas : "
+                       HorizontalOptions="Start"/>
+                <Label Text="{Binding cas}"
+                       HorizontalOptions="Start"
+                       x:Name="cas"/>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Prospěl by u maturity ? "
+                       HorizontalOptions="Start"/>
+                <Label Text="{Binding prospel}"
+                       HorizontalOptions="Start"/>
+            </StackLayout>
+            
+            <Label Text="Otázky :"
+                   FontSize ="Medium"
+                   Padding="0,10,0,0"/>
+            <ScrollView>
+                <StackLayout x:Name="odpovediGrid">
+
+
+                </StackLayout>
+            </ScrollView>
+            <Button Text="Dokončit"
+                    Clicked="Domu"
+                    VerticalOptions="EndAndExpand"
+                    HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

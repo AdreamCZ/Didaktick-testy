@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Otazky>
+  <Otazka>
+    <Typ>AnoNe</Typ>
+    <Bodu>2</Bodu>
+    <Ukol>
+      Rozhodněte o každé z následujících možností, zda je napsána pravopisně
+      správně (A), či nikoli (N).
+    </Ukol>
+    <Moznosti>
+      <Moznost0>
+        Vášniví sběratelé dorazili na aukci jen kvůli pamětní medaili z ryzího zlata.
+      </Moznost0>
+      <Moznost1>
+        Každodenní úklid celého bytu vnímala už od dětství jako plýtvání časem
+        i energií.
+      </Moznost1>
+      <Moznost2>
+        Se zájmem jsme pozorovali lvi, kteří silnými čelistmi trhali veliké kusy
+        syrového masa.
+      </Moznost2>
+      <Moznost3>
+        Ze všech cizojazyčných filmů, které se na festivalu promítaly, nás oslovily
+        jen dva francouzské sn
+      </Moznost3>
+    </Moznosti>
+    <Spravna>AANA</Spravna>
+  </Otazka>
+  <Otazka>
+    <Typ>AnoNe</Typ>
+    <Bodu>2</Bodu>
+    <Ukol>
+      Rozhodněte o každém z následujících souvětí, zda je zapsáno pravopisně
+      správně (A), či nikoli (N):
+    </Ukol>
+    <Moznosti>
+      <Moznost0>
+        Italští fotbalisté sehráli se Španěly vyrovnané utkání, které však skončilo
+        vítězstvím španělského mužstva.
+      </Moznost0>
+      <Moznost1>
+        Ve Vysokých Tatrách jsme vyhledávali rázovité horské vesničky, v jejichž
+        blízkosti slovenští bačové pasou svá stáda ovcí.
+      </Moznost1>
+      <Moznost2>
+        Nejzajímavějšími hosty festivalu v Karlových Varech byli známí japončtí
+        herci, kteří za hlavní role v novém filmu získali cenu diváků.
+      </Moznost2>
+      <Moznost3>
+        Němečtí archeologové nedávno odhalili pozůstatky rozlehlé budovy, která
+        zřejmě sloužila jako škola pro gladiátory ve starověkém Římě.
+      </Moznost3>
+    </Moznosti>
+    <Spravna>AANA</Spravna>
+  </Otazka>
+  <Otazka>
+    <Typ>AnoNe</Typ>
+    <Bodu>2</Bodu>
+    <Ukol>
+      Rozhodněte o každém z následujících souvětí, zda je zapsáno pravopisně
+      správně (A), či nikoli (N):
+    </Ukol>
+    <Moznosti>
+      <Moznost0>
+        Během výslechu si vzpomněla, že chvíli před tím přepadením se jí ptal na
+        cestu nějaký cizí muž.
+      </Moznost0>
+      <Moznost1>
+        Po prudké vichřici, která se přehnala přes vesnici a její nejbližší okolí, nezbyl
+        na holích polích ani klas obilí.
+      </Moznost1>
+      <Moznost2>
+        Zletilý pachatel, který byl minulý týden odsouzen za ublížení na zdraví, si
+        odpiká sedm měsíců za mřížemi.
+      </Moznost2>
+      <Moznost3>
+        Mezi strmými skalními stěnami ochránci přírody objevili už jen zbytky orlích
+        hnízd, což ve vědeckých kruzích vyvolalo zděšení.
+      </Moznost3>
+    </Moznosti>
+    <Spravna>ANNA</Spravna>
+  </Otazka>
+  <Otazka>
+    <Typ>AnoNe</Typ>
+    <Bodu>2</Bodu>
+    <Ukol> Rozhodněte o každém z následujících tvrzení, zda je pravdivé (A), či nikoli (N):</Ukol>
+    <Moznosti>
+      <Moznost0>
+        Ve větě "Mezi těmito dvěma díly není rozdíl" je tvar číslovky nespisovný.
+      </Moznost0>
+      <Moznost1>
+        Ve větě "Josef II. vydal patent o zrušení nevolnictví" je slovo nevolnictví archaické.
+      </Moznost1>
+      <Moznost2>
+        Ve větě "Žalobce svůj případ projel na celé čáře" je slovo projel užito jako slovo expresivní.
+      </Moznost2>
+      <Moznost3>
+        Ve větě "V příručce pro začínající šachisty jsou popsány šachové partie" je slovní spojení šachové partie slangové.
+      </Moznost3>
+    </Moznosti>
+    <Spravna>NNAN</Spravna>
+  </Otazka>
+  <Otazka>
+    <Typ>AnoNe</Typ>
+    <Bodu>2</Bodu>
+    <Ukol> Rozhodněte o každé z následujících možností, zda je napsána pravopisně správně (A), či nikoli (N).</Ukol>
+    <Moznosti>
+      <Moznost0>
+        Vášniví sběratelé dorazili na aukci jen kvůli pamětní medaili z ryzího zlata.
+      </Moznost0>
+      <Moznost1>
+        Každodenní úklid celého bytu vnímala už od dětství jako plýtvání časem
+        i energií.
+      </Moznost1>
+      <Moznost2>
+        Se zájmem jsme pozorovali lvi, kteří silnými čelistmi trhali veliké kusy
+        syrového masa.
+      </Moznost2>
+      <Moznost3>
+        Ze všech cizojazyčných filmů, které se na festivalu promítaly, nás oslovily
+        jen dva francouzské snímky.
+      </Moznost3>
+    </Moznosti>
+    <Spravna>AANA</Spravna>
+  </Otazka>
+  <Otazka>
+    <Typ>AnoNe</Typ>
+    <Bodu>2</Bodu>
+    <Ukol>
+      Rozhodněte o každém z následujících souvětí, zda je zapsáno pravopisně
+      správně (A), či nikoli (N):
+    </Ukol>
+    <Moznosti>
+      <Moznost0>
+        Italští fotbalisté sehráli se Španěly vyrovnané utkání, které však skončilo
+        vítězstvím španělského mužstva.
+      </Moznost0>
+      <Moznost1>
+        Ve Vysokých Tatrách jsme vyhledávali rázovité horské vesničky, v jejichž
+        blízkosti slovenští bačové pasou svá stáda ovcí.
+      </Moznost1>
+      <Moznost2>
+        Nejzajímavějšími hosty festivalu v Karlových Varech byli známí japončtí
+        herci, kteří za hlavní role v novém filmu získali cenu diváků.
+      </Moznost2>
+      <Moznost3>
+        Němečtí archeologové nedávno odhalili pozůstatky rozlehlé budovy, která
+        zřejmě sloužila jako škola pro gladiátory ve starověkém Římě.
+      </Moznost3>
+    </Moznosti>
+    <Spravna>AANA</Spravna>
+  </Otazka>
+
+  <Otazka>
+    <Typ>AnoNe</Typ>
+    <Bodu>2</Bodu>
+    <Ukol>
+      Rozhodněte o každém z následujících souvětí, zda je zapsáno pravopisně
+      správně (A), či nikoli (N):
+    </Ukol>
+    <Moznosti>
+      <Moznost0>
+        Během vysněné dovolené, kterou bych chtěl prožít u Středozemního moře,
+        bych rád procestoval španělské pobřeží.
+      </Moznost0>
+      <Moznost1>
+        Když přijedu do Ústí nad Orlicí, jdu se svými přáteli do jedné restaurace,
+        v níž si vždy vychutnám svůj oblíbený jelení guláš.
+      </Moznost1>
+      <Moznost2>
+        Ve Spojených státech amerických patří parkovací kamery k povinnému
+        vybavení aut, v zemích Evropské unie se podobné opatření zvažuje.
+      </Moznost2>
+      <Moznost3>
+        Díky množství léčebných pramenů se Česká Republika pyšní desítkami
+        lázeňských měst, nejvýznamnější nalezneme poblíž hranic s Německem.
+      </Moznost3>
+    </Moznosti>
+    <Spravna>AAAN</Spravna>
+  </Otazka>
+
+
+</Otazky>

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DDKTCKE.Pages.Nastaveni">
+    <ContentPage.Content>
+        <StackLayout x:Name="HlavniStackLayout" Padding="5,5,5,5">
+            <Label Text="Nastavení"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" 
+                FontSize="Title"/>
+            <Label Text="Typy otázek :"
+                   VerticalOptions="Start"
+                   HorizontalOptions="StartAndExpand"
+                   FontSize="Large"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="ABC"
+                       HorizontalOptions="StartAndExpand"
+                       FontSize="Medium"/>
+                <Switch x:Name="ABCBox"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Práce s textem - ABC"
+                       HorizontalOptions="StartAndExpand"
+                       FontSize="Medium"/>
+                <Switch x:Name="ABCTxtBox"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Práce s textem - Otevřená odpověd"
+                       HorizontalOptions="StartAndExpand"
+                       FontSize="Medium"/>
+                <Switch x:Name="OtevrenaTxtBox"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Práce s textem - Ano / Ne"
+                       HorizontalOptions="StartAndExpand"
+                       FontSize="Medium"/>
+                <Switch x:Name="AnoNeTextBox"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Seřazení textu"
+                       HorizontalOptions="StartAndExpand"
+                       FontSize="Medium"/>
+                <Switch x:Name="SerazeniBox"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Ano / Ne"
+                       HorizontalOptions="StartAndExpand"
+                       FontSize="Medium"/>
+                <Switch x:Name="AnoNeBox"/>
+            </StackLayout>
+            <Label Text="Testy :"
+                   VerticalOptions="Start"
+                   HorizontalOptions="StartAndExpand"
+                   FontSize="Large"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80*"/>
+                    <ColumnDefinition Width="20*"/>
+                </Grid.ColumnDefinitions>
+                
+                <Label Text="Maximální počet bodů (Délka testu)"
+                       Grid.Column="0"
+                       Grid.Row="0"
+                       FontSize="Medium"/>
+                <Entry Keyboard="Numeric"
+                       x:Name="limitBoduEntry"
+                       Grid.Row="0"
+                       Grid.Column="1"/>
+            </Grid>
+            <Button Text="Hotovo"
+                    VerticalOptions="EndAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    Clicked="Hotovo"/>
+
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

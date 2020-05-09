@@ -1,0 +1,87 @@
+@string/appbar_scrolling_view_behavior;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\layout\flyoutcontent.xml
+@string/appbar_scrolling_view_behavior;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\layout\rootlayout.xml
+adaptive-icon;obj\Debug\90\res\mipmap-anydpi-v26\icon.xml
+adaptive-icon;obj\Debug\90\res\mipmap-anydpi-v26\icon_round.xml
+alpha;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\anim\sfchart_fade_in.xml
+alpha;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\anim\sfchart_fade_out.xml
+alpha;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\anim\enterfromleft.xml
+alpha;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\anim\exittoleft.xml
+android.support.design.widget.AppBarLayout;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\layout\flyoutcontent.xml
+android.support.design.widget.AppBarLayout;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\layout\rootlayout.xml
+android.support.design.widget.AppBarLayout;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\layout\shellcontent.xml
+android.support.design.widget.BottomNavigationView;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\layout\bottomtablayout.xml
+android.support.design.widget.CoordinatorLayout;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\layout\flyoutcontent.xml
+android.support.design.widget.CoordinatorLayout;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\layout\rootlayout.xml
+android.support.design.widget.CoordinatorLayout;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\layout\shellcontent.xml
+android.support.design.widget.TabLayout;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\layout\rootlayout.xml
+android.support.design.widget.TabLayout;obj\Debug\90\res\layout\tabbar.xml
+android.support.v7.widget.RecyclerView;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\layout\flyoutcontent.xml
+android.support.v7.widget.Toolbar;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\layout\rootlayout.xml
+android.support.v7.widget.Toolbar;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\layout\shellcontent.xml
+android.support.v7.widget.Toolbar;obj\Debug\90\res\layout\toolbar.xml
+background;obj\Debug\90\res\mipmap-anydpi-v26\icon.xml
+background;obj\Debug\90\res\mipmap-anydpi-v26\icon_round.xml
+cache-path;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\43\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+color;obj\Debug\90\res\values\colors.xml
+Com.Syncfusion.Charts.GridLinesRenderer;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\layout\chart_layout.xml
+Com.Syncfusion.Charts.ChartAnnotationRenderer;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\layout\chart_layout.xml
+Com.Syncfusion.Charts.ChartAxisRenderer;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\layout\chart_layout.xml
+Com.Syncfusion.Charts.ChartBehaviorRenderer;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\layout\chart_layout.xml
+com.syncfusion.charts.ChartLegendIconView;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\layout\chart_legend_item.xml
+com.syncfusion.charts.ChartLegendItemsLayout;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\layout\chart_legend.xml
+Com.Syncfusion.Charts.ChartLegendLayout;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\layout\chart_layout.xml
+com.syncfusion.charts.ChartLegendScrollView;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\layout\chart_legend.xml
+com.syncfusion.charts.ChartLegendTitleView;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\layout\chart_legend.xml
+Com.Syncfusion.Charts.ChartRootLayout;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\layout\chart_layout.xml
+Com.Syncfusion.Charts.ChartStripLinesRenderer;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\layout\chart_layout.xml
+Com.Syncfusion.Charts.ChartTitle;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\layout\chart_layout.xml
+Com.Syncfusion.Charts.SeriesRenderer;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\layout\chart_layout.xml
+Com.Syncfusion.Charts.TechnicalIndicatorRenderer;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\layout\chart_layout.xml
+Com.Syncfusion.Rangenavigator.GridLinesRenderer;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\layout\range_navigator_layout.xml
+Com.Syncfusion.Rangenavigator.LabelsRenderer;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\layout\range_navigator_layout.xml
+Com.Syncfusion.Rangenavigator.ThumbRenderer;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\layout\range_navigator_layout.xml
+external-cache-path;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\43\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+external-path;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\43\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+foreground;obj\Debug\90\res\mipmap-anydpi-v26\icon.xml
+foreground;obj\Debug\90\res\mipmap-anydpi-v26\icon_round.xml
+FrameLayout;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\layout\chart_layout.xml
+FrameLayout;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\layout\range_navigator_layout.xml
+FrameLayout;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\layout\bottomtablayout.xml
+HorizontalScrollView;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\layout\chart_legend.xml
+item;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\values\styles.xml
+item;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\5\jl\res\drawable\popup_forms_android_shadow.xml
+item;obj\Debug\90\res\values\styles.xml
+layer-list;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\5\jl\res\drawable\popup_forms_android_shadow.xml
+LinearLayout;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\layout\chart_legend.xml
+LinearLayout;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\layout\chart_legend_item.xml
+LinearLayout;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\layout\bottomtablayout.xml
+paths;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\43\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+RelativeLayout;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\layout\range_navigator_layout.xml
+resources;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\values\strings.xml
+resources;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\4\jl\res\values\strings.xml
+resources;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\values\styles.xml
+resources;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\5\jl\res\values\strings.xml
+resources;obj\Debug\90\res\values\colors.xml
+resources;obj\Debug\90\res\values\styles.xml
+scale;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\anim\sfchart_scale_in.xml
+scale;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\anim\sfchart_scale_out.xml
+set;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\anim\sfchart_fade_in.xml
+set;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\anim\sfchart_fade_out.xml
+set;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\anim\sfchart_scale_in.xml
+set;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\anim\sfchart_scale_out.xml
+set;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\anim\enterfromleft.xml
+set;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\anim\enterfromright.xml
+set;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\anim\exittoleft.xml
+set;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\anim\exittoright.xml
+shape;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\5\jl\res\drawable\popup_forms_android_shadow.xml
+string;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\values\strings.xml
+string;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\4\jl\res\values\strings.xml
+string;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\5\jl\res\values\strings.xml
+style;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\values\styles.xml
+style;obj\Debug\90\res\values\styles.xml
+TextView;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\layout\chart_legend_item.xml
+translate;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\anim\enterfromleft.xml
+translate;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\anim\enterfromright.xml
+translate;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\anim\exittoleft.xml
+translate;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\anim\exittoright.xml
+xamarin.forms.platform.android.appcompat.FormsViewPager;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\layout\rootlayout.xml

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:htmlLabel="clr-namespace:LabelHtml.Forms.Plugin.Abstractions;assembly=HtmlLabel.Forms.Plugin"
+             mc:Ignorable="d"
+             x:Class="DDKTCKE.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#FFB300</Color>
+            <Style TargetType="Button" >
+                <Setter Property="BorderColor" Value="#00B670"/>
+                <Setter Property="BorderWidth" Value="2"/>
+                <Setter Property="BackgroundColor" Value="#F7FFFF"/>
+                <Setter Property="CornerRadius" Value="5"/>
+                <Setter Property="Padding" Value="20,5,20,5"/>
+                <Setter Property="Margin" Value="20,2,20,2"/>
+            </Style>
+
+            <Style x:Key="navigace" TargetType="Button">
+                <Setter Property="BorderColor" Value="LightSlateGray"/>
+                <Setter Property="BackgroundColor" Value="SlateGray"/>
+                <Setter Property="TextColor" Value="DarkOrange"/>
+            </Style>
+
+            <Style TargetType="ImageButton" >
+                <Setter Property="BorderColor" Value="#00B670"/>
+                <Setter Property="BorderWidth" Value="2"/>
+                <Setter Property="BackgroundColor" Value="#F7FFFF"/>
+                <Setter Property="CornerRadius" Value="5"/>
+                <Setter Property="Padding" Value="20,5,20,5"/>
+                <Setter Property="Margin" Value="20,2,20,2"/>
+            </Style>
+
+
+            <Style TargetType="BoxView">
+                <Setter Property="Color" Value="#00B670"/>
+            </Style>
+
+            <Style TargetType="htmlLabel:HtmlLabel">
+                <Setter Property="FontFamily" Value="Roboto-Medium.ttf#Roboto-Medium"/>
+            </Style>
+
+            <Style TargetType="Label">
+                <Setter Property="FontFamily" Value="Roboto-Medium.ttf#Roboto-Medium"/>
+            </Style>
+
+            <Style TargetType="Frame">
+                <Setter Property="CornerRadius" Value="10"/>
+                <Setter Property="Margin" Value="5,5,5,5"/>
+                <Setter Property="BorderColor" Value="#00B670"/>
+            </Style>
+
+
+
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

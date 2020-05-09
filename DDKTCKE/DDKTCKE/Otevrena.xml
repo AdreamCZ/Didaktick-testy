@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Otazky>
+  <Otazka>
+    <Typ>txtOtevrena</Typ>
+    <Bodu>1</Bodu>
+    <Ukol> Napište příjmení českého držitele Nobelovy ceny za literaturu. Jakákoli nadbytečná chybná informace, tedy např. uvedení chybného křestního jména a správného příjmení, je považována za chybu.</Ukol>
+    <Spravna>Seifert</Spravna>
+  </Otazka>
+</Otazky>

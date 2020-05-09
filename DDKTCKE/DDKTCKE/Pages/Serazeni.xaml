@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DDKTCKE.Pages.Serazeni">
+    <ContentPage.Content>
+        <StackLayout x:Name="myStackLayout" >
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Fill" VerticalOptions="StartAndExpand">
+                <Label Text="{Binding Body}"
+                    HorizontalOptions="StartAndExpand"
+                   FontSize="Small"/>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Label Text="Správně:"
+                           FontSize="Small"/>
+                    <Label Text="{Binding Uspesnost}"
+                           FontSize="Small"/>
+                    <Label Text="%"
+                           FontSize="Small"/>
+                </StackLayout>
+                <Label Text=" "
+                       HorizontalOptions="EndAndExpand"/>
+            </StackLayout>
+            <Label Text="{Binding Ukol}"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" 
+                FontSize="Medium"
+                TextColor="Black"
+               Margin="15,5,15,5"/>
+
+            <StackLayout Orientation="Horizontal" 
+                         HorizontalOptions="Fill"
+                         VerticalOptions="EndAndExpand"
+                         >
+                <Button Text="&#8962;"
+                    HorizontalOptions="StartAndExpand"
+                    BackgroundColor="LightGray"
+                    FontSize="Large"
+                        Clicked="Zpet"/>
+                <Label Text="Autorem zadání je Cermat.cz publikující na novamaturita.cz. Pokud není uvedeno jinak, texty jsou duševním vlastnictvím Cermat.cz."
+                       FontSize="Micro"
+                       HorizontalOptions="FillAndExpand"
+                       HorizontalTextAlignment="Center"/>
+                <Button Text="	&#707;"
+                        Padding="0,5,0,0"
+                    HorizontalOptions="EndAndExpand"
+                    FontSize="Title"
+                    BackgroundColor="Gray"
+                    BorderColor="Gray"
+                        x:Name="Pokracovat_butt"
+                        Clicked="Pokracovat"
+                        IsEnabled="False"
+                    />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

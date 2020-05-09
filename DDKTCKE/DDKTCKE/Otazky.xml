@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Otazky>
+  <Otazka>
+    <Typ>ABC</Typ>
+    <Bodu>1</Bodu>
+    <Ukol> Ve kterém z následujících souvětí není chyba v interpunkci? </Ukol>
+    <Moznosti>
+      <Moznost1>A) Po vyčerpávajících mrazech, nastaly konečně slunečné dny, které lákaly k výletům do přírody.</Moznost1>
+      <Moznost2>B) Mé obavy se každým dnem stupňovaly, výsledky mé práce byly, ale nakonec velmi uspokojivé.</Moznost2>
+      <Moznost3>C) Pokud snížím množství sladkostí, které denně jím alespoň na polovinu, udělám něco pro své zdraví.</Moznost3>
+      <Moznost4>D) Rodiče celý víkend usilovně přemýšleli, jak se nejsnáze vyhnout tomu, před čím je jejich sousedé důrazně varovali.</Moznost4>
+    </Moznosti>
+    <Spravna>C</Spravna>
+  </Otazka>
+
+  <Otazka>
+    <Typ>ABC</Typ>
+    <Bodu>2</Bodu>
+    <Ukol> Ve kterém z následujících souvětí není chyba v interpunkci? VAR2 </Ukol>
+    <Moznosti>
+      <Moznost1>A) Po vyčerpávajících mrazech, nastaly konečně slunečné dny, které lákaly k výletům do přírody. VAR2</Moznost1>
+      <Moznost2>B) Mé obavy se každým dnem stupňovaly, výsledky mé práce byly, ale nakonec velmi uspokojivé.</Moznost2>
+      <Moznost3>C) Pokud snížím množství sladkostí, které denně jím alespoň na polovinu, udělám něco pro své zdraví.</Moznost3>
+      <Moznost4>D) Rodiče celý víkend usilovně přemýšleli, jak se nejsnáze vyhnout tomu, před čím je jejich sousedé důrazně varovali.</Moznost4>
+    </Moznosti>
+    <Spravna>C</Spravna>
+  </Otazka>
+</Otazky>

@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
+             mc:Ignorable="d"
+             x:Class="DDKTCKE.Pages.MainPage">
+    <ContentPage.Content>
+        <StackLayout Padding="5,10,5,10" x:Name="HlavniStackLayout">
+        <Label Text="Maturita z češtiny jednoduše." 
+           HorizontalOptions="Center"
+           VerticalOptions="Start" 
+           FontSize="Large"
+               />
+            <Button Text="Procvičování"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="Center"
+                    FontSize="Large"
+                    x:Name="ProcvicovaniButt"
+                    FontAttributes="Bold" Padding="20" 
+                    Clicked="StartProcvicovani_onClicked"/>
+            <Button Text="Test"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="Center"
+                    FontSize="Large"
+                    FontAttributes="Bold" Padding="20" 
+                    WidthRequest="{Binding Path=Width, Source={x:Reference ProcvicovaniButt}}"
+                    Clicked="StartTest_onClicked"/>
+
+            <Label Margin="15,0,15,0"
+               Text="Veškeré otázky jsou čerpané z předchozích maturitních testů CERMAT. Díky tomu se učíš přesně to co potkáš u maturity."
+               FontSize="Small"/>
+
+            <Frame VerticalOptions="FillAndExpand" HorizontalOptions="CenterAndExpand">
+                <chart:SfChart VerticalOptions="FillAndExpand" HorizontalOptions="CenterAndExpand">
+                    <chart:SfChart.Title>
+                        <chart:ChartTitle Text="Správně zodpovězeno otázek"/>
+
+                    </chart:SfChart.Title>
+
+                    <chart:SfChart.PrimaryAxis>
+
+                        <chart:DateTimeAxis>
+                            <chart:DateTimeAxis.LabelStyle>
+
+                                <chart:ChartAxisLabelStyle LabelFormat ="dd.MM."/>
+
+                            </chart:DateTimeAxis.LabelStyle>
+
+                            <chart:DateTimeAxis.Title>
+
+                                <chart:ChartAxisTitle Text="Datum"></chart:ChartAxisTitle>
+
+                            </chart:DateTimeAxis.Title>
+
+                        </chart:DateTimeAxis>
+
+                    </chart:SfChart.PrimaryAxis>
+
+                    <chart:SfChart.SecondaryAxis>
+
+                        <chart:NumericalAxis Maximum="1">
+                            <chart:NumericalAxis.LabelStyle>
+                                <chart:ChartAxisLabelStyle LabelFormat ="#%" />
+                            </chart:NumericalAxis.LabelStyle>
+                            <chart:NumericalAxis.Title>
+
+                                <chart:ChartAxisTitle Text="Správně (v %)"></chart:ChartAxisTitle>
+
+                            </chart:NumericalAxis.Title>
+
+                        </chart:NumericalAxis>
+
+                    </chart:SfChart.SecondaryAxis>
+
+                    <chart:SfChart.Series>
+
+                        <chart:LineSeries ItemsSource="{Binding UspesnostData}" XBindingPath="XValue" YBindingPath="YValue">
+
+                        </chart:LineSeries>
+
+                    </chart:SfChart.Series>
+
+                </chart:SfChart>
+            </Frame>
+            <Button Text="Nastavení"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="End"
+            FontSize="Medium"
+            Clicked="OtevriNastaveni"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

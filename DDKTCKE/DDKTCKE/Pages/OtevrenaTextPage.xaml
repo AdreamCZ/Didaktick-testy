@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:htmlLabel="clr-namespace:LabelHtml.Forms.Plugin.Abstractions;assembly=HtmlLabel.Forms.Plugin"
+             mc:Ignorable="d"
+             x:Class="DDKTCKE.Pages.OtevrenaTextPage"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <StackLayout x:Name="myStackLayout" >
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Fill" VerticalOptions="StartAndExpand">
+                <Label Text="{Binding Body}"
+                    HorizontalOptions="StartAndExpand"
+                   FontSize="Small"/>
+
+                 <Label Text="{Binding Uspesnost}"
+                        HorizontalOptions="CenterAndExpand"
+                           FontSize="Small"/>
+
+                <Label Text="TEXT:"
+                       HorizontalOptions="EndAndExpand"
+                       FontSize="Small"/>
+            </StackLayout>
+            
+              <ScrollView>
+                    <htmlLabel:HtmlLabel Text="{Binding Text}"
+                                     FontSize="Subtitle"
+                                     TextColor="Black"/>
+                
+            </ScrollView>
+            <StackLayout Orientation="Horizontal">
+                <BoxView HeightRequest="3"
+                         WidthRequest="3"
+                         HorizontalOptions="FillAndExpand"
+                         VerticalOptions="Center"/>
+                <Button Text="Rozbalit"
+                        FontSize="Micro"
+                        Clicked="Rozbalit"
+                        HorizontalOptions="End"
+                        Padding="3,3,3,3"
+                        CornerRadius="5"
+                        HeightRequest="22"
+                        Margin="0,0,0,0"/>
+            </StackLayout>
+            <Label Text="{Binding Ukol}"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" 
+                FontSize="Medium"
+                TextColor="Black"
+               Margin="15,5,15,5"/>
+
+                <Entry x:Name="Vstup"
+                       HorizontalOptions="FillAndExpand"/>
+
+            <Label Text=""
+                       x:Name="SpravnaOdpoved"
+                       FontSize="Medium"
+                       HorizontalOptions="Center"
+                       VerticalOptions="End"
+                   TextColor="Black"/>
+            <StackLayout Orientation="Horizontal" 
+                         HorizontalOptions="Fill"
+                         VerticalOptions="EndAndExpand"
+                         Margin="0"
+                         BackgroundColor="Gainsboro"
+                         >
+                <Button Text="&#8962;"
+                    HorizontalOptions="StartAndExpand"
+                    BackgroundColor="LightGray"
+                        Margin="0"
+                        CornerRadius="0"
+                    FontSize="Large"
+                        
+                        Clicked="Zpet"/>
+                <StackLayout Spacing="0">
+                    <Button Text="Kontrola"
+                    Clicked="KontrolaOdpovedi"
+                    VerticalOptions="Start"
+                    HorizontalOptions="CenterAndExpand"
+                    x:Name="Kontrola"
+                    Margin="0,0,0,0"/>
+                    <Label Text="Autorem zadání je Cermat.cz"
+                       FontSize="Micro"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="EndAndExpand"
+                       HorizontalTextAlignment="Center"/>
+
+                </StackLayout>
+                <Button Text="	&#707;"
+                        Padding="0,5,0,0"
+                        Margin="0"
+                        CornerRadius="0"
+                    HorizontalOptions="EndAndExpand"
+                    FontSize="Title"
+                    BackgroundColor="Gray"
+                    BorderColor="Gray"
+                        x:Name="Pokracovat_butt"
+                        Clicked="Pokracovat"
+                        IsEnabled="False"
+                        
+                    />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
