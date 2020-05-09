@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="TextovaIco.svg"
+   inkscape:export-filename="C:\Users\Aram\Bitová mapa.png"
+   inkscape:export-xdpi="235.54166"
+   inkscape:export-ydpi="235.54166">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="452.3536"
+     inkscape:cy="414.50655"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Vrstva 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#cccccc;fill-opacity:1;stroke-width:0.26458332"
+       id="rect10"
+       width="55.859333"
+       height="55.859333"
+       x="73.766388"
+       y="164.83522" />
+    <rect
+       style="fill:#f9f9f9;fill-opacity:1;stroke-width:0.34725004"
+       id="rect12"
+       width="54.441917"
+       height="54.323799"
+       x="74.522339"
+       y="165.73291"
+       ry="1.751864" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot14"
+       style="font-style:normal;font-weight:normal;font-size:18.66666603px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.31022872,0,0,0.30193883,-27.55587,-28.54268)"><flowRegion
+         id="flowRegion16"
+         style="font-size:18.66666603px"><rect
+           id="rect18"
+           width="182.45508"
+           height="163.42299"
+           x="323.75391"
+           y="648.50562"
+           style="font-size:18.66666603px" /></flowRegion><flowPara
+         id="flowPara20"
+         style="font-size:29.33333397px;text-align:center;text-anchor:middle">Didaktické </flowPara><flowPara
+         style="font-size:29.33333397px;text-align:center;text-anchor:middle"
+         id="flowPara30">Testy</flowPara><flowPara
+         style="font-size:29.33333397px;text-align:center;text-anchor:middle"
+         id="flowPara46">z</flowPara><flowPara
+         style="font-size:29.33333397px;text-align:center;text-anchor:middle"
+         id="flowPara42">Češtiny</flowPara><flowPara
+         style="font-size:29.33333397px;text-align:center;text-anchor:middle"
+         id="flowPara32" /><flowPara
+         style="font-size:29.33333397px;text-align:center;text-anchor:middle"
+         id="flowPara40">Č</flowPara><flowPara
+         style="font-size:29.33333397px;text-align:center;text-anchor:middle"
+         id="flowPara34">Jazyka</flowPara><flowPara
+         style="font-size:29.33333397px;text-align:center;text-anchor:middle"
+         id="flowPara24"> </flowPara></flowRoot>    <path
+       style="fill:#00ff00;stroke:#000000;stroke-width:0.18586113px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 109.09056,211.20505 6.7454,8.57666 12.82293,-19.19852 -2.73823,-2.11119 -9.48362,14.71228 -4.40789,-5.54184 z"
+       id="path36"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
