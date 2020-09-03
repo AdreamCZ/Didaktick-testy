@@ -62,6 +62,7 @@ namespace DDKTCKE.Pages
 
 
 
+
             int index = 0;
             foreach (String moznost in otzk.Moznosti.Moznost)
             {

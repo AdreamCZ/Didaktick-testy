@@ -44,9 +44,9 @@ namespace DDKTCKE.Pages
             if (TypyStr != null)
             {
                 Typy = TypyStr.Split(',');
-                if (Typy.Length != 7)
+                if (Typy.Length != 8)
                 {
-                    Typy = new string[] { "True", "True", "True", "True", "True", "True" };
+                    Typy = new string[] { "True", "True", "True", "True", "True", "True","True","True" };
                 }
 
                 for (int i = 0; i < Boxes.Count; i++) //Podle toho co je uložené nastaví Switche
@@ -90,11 +90,17 @@ namespace DDKTCKE.Pages
             }
             else
             {
-
-                prefEditor.PutString("Typy", CheckData); //Zapíše které typy otázek použít ve formátu Bool,Bool.. Nutné udržení stejného pořadí
-                prefEditor.PutInt("limitBodu", Int32.Parse(limitBoduEntry.Text));
-                prefEditor.Commit();
-                await Navigation.PushAsync(new Pages.MainPage());
+                int limitBodu = -1;
+                if (Int32.TryParse(limitBoduEntry.Text,out limitBodu) == false || limitBodu < 0 ){
+                    Android.Widget.Toast.MakeText(Android.App.Application.Context, "Chyba : Maximální počet bodů v testu musí být větší než nula!", Android.Widget.ToastLength.Long).Show();
+                }
+                else
+                {
+                    prefEditor.PutString("Typy", CheckData); //Zapíše které typy otázek použít ve formátu Bool,Bool.. Nutné udržení stejného pořadí
+                    prefEditor.PutInt("limitBodu", Int32.Parse(limitBoduEntry.Text));
+                    prefEditor.Commit();
+                    await Navigation.PushAsync(new Pages.MainPage());
+                }
             }
         }
 

@@ -17,6 +17,7 @@ namespace DDKTCKE.Pages
     {
         public string Ukol { get; set; }
         public string Body { get; set; }
+        public int BodyInt;
         public string Text { get; set; }
         public string Uspesnost { get; set; }
         public string Spravna { get; set; }
@@ -36,6 +37,7 @@ namespace DDKTCKE.Pages
             }
             Otazka otzk = NactiOtazku();
             Body = otzk.Bodu.ToString();
+            BodyInt = otzk.Bodu;
             Spravna = otzk.Spravna.Trim().ToLower();
             if (otzk.Bodu == 1)
             {
@@ -50,7 +52,7 @@ namespace DDKTCKE.Pages
                 Body += " bodů";
             }
 
-            Ukol = otzk.Ukol.Replace("\n", "").Trim();
+            Ukol = otzk.Ukol.Replace("\n", " ").Trim();
             while (Ukol.Contains("  "))
             {
                 Ukol = Ukol.Replace("  ", " ");
@@ -70,111 +72,107 @@ namespace DDKTCKE.Pages
                 Pokracovat_butt.BackgroundColor = Xamarin.Forms.Color.LawnGreen;
             }
 
-            bool jeSpravna = false;
-            string odpoved = "";
-
-
             if (Vstup.Text != null)
             {
+                bool jeSpravna = false;
+                List<bool> Vyhodnoceni = new List<bool>();
+                string odpoved = "";
+
                 odpoved = Vstup.Text.ToLower().Trim();
-                if (Spravna.Contains(",")) //Pokud je odpověd víceslovná
+
+                String[] Spravne = Spravna.Split(',');
+                for (int i = 0; i < Spravne.Length; i++)
                 {
-                    String[] Spravne = Spravna.Split(',');
-                    for (int i = 0; i < Spravne.Length; i++)
-                    {
-                        Spravne[i] = Spravne[i].Trim();
-                    }
-                    String[] Odpovedi;
-                    if (Vstup.Text.Contains(','))
-                    {
-                        Odpovedi = Vstup.Text.Split(',');
-                    }
-                    else
-                    {
-                        Odpovedi = Vstup.Text.Split(' ');
-                    }
-                    for (int i = 0; i < Odpovedi.Length; i++)
-                    {
-                        Odpovedi[i] = Odpovedi[i].ToLower().Trim();
-                    }
-                    if (Odpovedi.Length == Spravne.Length)
-                    {
-                        int check = 0;
-                        for (int y = 0; y < Odpovedi.Length; y++)
-                        {
-                            if (!Spravne.Contains(Odpovedi[y]))
-                            {
-                                break;
-                            }
-                            check = y;
-                        }
-                        if (check == Odpovedi.Length - 1)
-                        {
-                            jeSpravna = true;
-                        }
-                    }
+
+                    Spravne[i] = Spravne[i].Trim();
                 }
-                else if (Spravna.Contains("/"))//Pokud je více přijatelnách odpovědí 
+
+                //Zpracování odpovědi
+                String[] Odpovedi;
+                if (Vstup.Text.Contains(','))
                 {
-                    String[] Spravne = Spravna.Split('/');
-                    for (int i = 0; i < Spravne.Length; i++)
-                    {
-                        Spravne[i] = Spravne[i].Trim();
-                    }
-
-
-                    foreach (string s in Spravne)
-                    {
-                        if (s == odpoved)
-                        {
-                            jeSpravna = true;
-                        }
-                    }
+                    Odpovedi = Vstup.Text.Split(',');
                 }
                 else
                 {
-                    if (odpoved == Spravna.ToLower())
-                    {
-                        jeSpravna = true;
-                    }
-                    else
+                    Odpovedi = Vstup.Text.Split(' ');
+                }
+                for (int i = 0; i < Odpovedi.Length; i++)
+                {
+                    Odpovedi[i] = Odpovedi[i].ToLower().Trim();
+                }
+                //Kontrola
+                if (Odpovedi.Length == Spravne.Length)
+                {
+                    for (int y = 0; y < Odpovedi.Length; y++)
                     {
                         jeSpravna = false;
+                        for (int s = 0; s < Spravne.Length; s++)
+                        {
+
+                            if (Spravne[s].Contains("/"))
+                            {
+                                
+                                //if (Odpovedi[y].Trim() == Spravne[s].Split('/')[0].Trim() || Odpovedi[y].Trim() == Spravne[s].Split('/')[1].Trim()) //PRO 2 MOŽNOSTI FUNGOVALO DOBŘE
+                                if(Spravne[s].Split('/').Select(sp => sp.Trim()).Contains(Odpovedi[y].Trim()))
+                                {
+                                    jeSpravna = true;
+                                }
+
+                            }
+                            else if (Odpovedi[y].Trim() == Spravne[s])
+                            {
+                                jeSpravna = true;
+                            }
+
+                        }
+                        if (jeSpravna)
+                        {
+                            Vyhodnoceni.Add(true);
+                        }
+                        else
+                        {
+                            Vyhodnoceni.Add(false);
+                        }
                     }
                 }
-            }
-            else
-            {
-                jeSpravna = false;
-            }
 
-            if (jeSpravna)
-            {
-                Statistika.Current.Spravnych_odpovedi++;
-                if (Test.current.probiha)
+                if (!Vyhodnoceni.Contains(false))
                 {
-                    Test.current.Odpoved(1, 1, Ukol, odpoved, Spravna);
+                    Statistika.Current.Spravnych_odpovedi++;
+                    if (Test.current.probiha)
+                    {
+                        Test.current.Odpoved(BodyInt, BodyInt, Ukol, odpoved, Spravna);
+                    }
+                    else
+                    {
+                        Popups.Spravne();
+                        Vstup.TextColor = Color.Green;
+                    }
                 }
                 else
                 {
-                    Popups.Spravne();
-                    Vstup.TextColor = Color.Green;
+                    if (Test.current.probiha)
+                    {
+                        Test.current.Odpoved(0, BodyInt, Ukol, odpoved, Spravna);
+                    }
+                    else
+                    {
+                        SpravnaOdpoved.Text = "Správně = " + Spravna;
+                        Popups.Spatne();
+                        Vstup.TextColor = Color.Red;
+                    }
                 }
+
+
             }
             else
             {
                 if (Test.current.probiha)
                 {
-                    Test.current.Odpoved(0, 1, Ukol, odpoved, Spravna);
-                }
-                else
-                {
-                    SpravnaOdpoved.Text = "Správně = " + Spravna;
-                    Popups.Spatne();
-                    Vstup.TextColor = Color.Red;
+                    Test.current.Odpoved(0, BodyInt, Ukol, " ", Spravna);
                 }
             }
-
         }
 
         Otazka NactiOtazku()

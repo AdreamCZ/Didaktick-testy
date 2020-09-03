@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29424.173
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDKTCKE.Android", "DDKTCKE.Android\DDKTCKE.Android.csproj", "{6FB8637A-58B5-4945-85C2-5492C2B89EDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDKTCKE", "DDKTCKE\DDKTCKE.csproj", "{95AF8BE2-8418-4B5F-9110-026829D50DE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DDKTCKE", "DDKTCKE\DDKTCKE.csproj", "{95AF8BE2-8418-4B5F-9110-026829D50DE8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

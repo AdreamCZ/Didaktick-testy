@@ -13,6 +13,14 @@ namespace DDKTCKE
         public Moznosti(List<string> arr) => Moznost = arr;
     }
 
+    public class Podukoly
+    {
+        [XmlElement(ElementName = "Podukoly")]
+        public List<string> Podukol { get; set; }
+
+        public Podukoly(List<string> arr) => Podukol = arr;
+    }
+
     [XmlRoot(ElementName = "Otazka")]
     public class Otazka
     {
@@ -28,7 +36,10 @@ namespace DDKTCKE
         [XmlElement(ElementName = "Moznosti")]
         public Moznosti Moznosti { get; set; }
         [XmlElement(ElementName = "Spravna")]
+
         public string Spravna { get; set; }
+        [XmlElement(ElementName = "Podukoly")]
+        public Podukoly PodUkoly { get; set; }
         [XmlElement(ElementName = "Zdroj")]
         public string Zdroj { get; set; }
     }

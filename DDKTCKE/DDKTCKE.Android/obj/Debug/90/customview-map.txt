@@ -19,6 +19,7 @@ android.support.v7.widget.RecyclerView;D:\Didakticke testy\Didaktick-testy\DDKTC
 android.support.v7.widget.Toolbar;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\layout\rootlayout.xml
 android.support.v7.widget.Toolbar;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\layout\shellcontent.xml
 android.support.v7.widget.Toolbar;obj\Debug\90\res\layout\toolbar.xml
+attr;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\values\attrs.xml
 background;obj\Debug\90\res\mipmap-anydpi-v26\icon.xml
 background;obj\Debug\90\res\mipmap-anydpi-v26\icon_round.xml
 cache-path;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\43\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
@@ -40,6 +41,7 @@ Com.Syncfusion.Charts.TechnicalIndicatorRenderer;D:\Didakticke testy\Didaktick-t
 Com.Syncfusion.Rangenavigator.GridLinesRenderer;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\layout\range_navigator_layout.xml
 Com.Syncfusion.Rangenavigator.LabelsRenderer;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\layout\range_navigator_layout.xml
 Com.Syncfusion.Rangenavigator.ThumbRenderer;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\layout\range_navigator_layout.xml
+declare-styleable;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\values\attrs.xml
 external-cache-path;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\43\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 external-path;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\43\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 foreground;obj\Debug\90\res\mipmap-anydpi-v26\icon.xml
@@ -59,6 +61,7 @@ paths;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\l
 RelativeLayout;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\layout\range_navigator_layout.xml
 resources;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\3\jl\res\values\strings.xml
 resources;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\4\jl\res\values\strings.xml
+resources;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\values\attrs.xml
 resources;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\44\jl\res\values\styles.xml
 resources;D:\Didakticke testy\Didaktick-testy\DDKTCKE\DDKTCKE.Android\obj\Debug\90\lp\5\jl\res\values\strings.xml
 resources;obj\Debug\90\res\values\colors.xml

@@ -1,4 +1,192 @@
 <Otazky>
+
+  <Otazka>
+    <Typ>ABC</Typ>
+    <Bodu>1</Bodu>
+    <Ukol> Ve kterém z následujících souvětí je nutné alespoň za jednu číslovku doplnit
+tečku, aby souvětí bylo zapsáno pravopisně správně?
+</Ukol>
+    <Moznosti>
+        <Moznost1>A) Přečtěte si vyznačené věty 4 odstavce a vypište z nich 5 klíčových slov.
+</Moznost1>
+        <Moznost2>B) Prostudujte si doma kapitolu 4 na straně 55 a pečlivě si udělejte výpisky.
+</Moznost2>
+        <Moznost3>C) Článek 4 odstavec 5 obsahuje všechny informace, které potřebujete k analýze.
+</Moznost3>
+        <Moznost4>D) Apartmán číslo 44 je dostatečně prostorný, ubytovat se v něm může až 5 osob.</Moznost4>
+    </Moznosti>
+    <Spravna>A</Spravna>
+</Otazka>
+<Otazka>
+    <Typ>ABC</Typ>
+    <Bodu>1</Bodu>
+    <Ukol> Ve které z následujících vět je jazyková chyba?
+</Ukol>
+    <Moznosti>
+        <Moznost1>A) Okolnosti záhadné silvestrovské události byly čím dál tím nejasnější.
+</Moznost1>
+        <Moznost2>B) Na úzkých silnicích v horách bývají řidiči daleko nejistější než na dálnici.
+</Moznost2>
+        <Moznost3>C) Pro spravedlivý průběh hry je nutné stanovit co nejednoznačnější pravidla.
+</Moznost3>
+        <Moznost4>D) Průvodkyně trpělivě snášela stále nejapnější poznámky účastníků prohlídky.</Moznost4>
+    </Moznosti>
+    <Spravna>C</Spravna>
+</Otazka>
+<Otazka>
+    <Typ>ABC</Typ>
+    <Bodu>1</Bodu>
+    <Ukol> Ve které z následujících možností je pravopisná chyba?
+</Ukol>
+    <Moznosti>
+        <Moznost1>A) Ze ztepilého jasanu zbyl pouze vyviklaný pařez.
+</Moznost1>
+        <Moznost2>B) Na dovolené jí vždy spílá, že sleduje plytké seriály.
+</Moznost2>
+        <Moznost3>C) Na jeho nevyzpytatelné tváři se náhle objevil úlisný úsměv.
+</Moznost3>
+        <Moznost4>D) Z výzkumů vyplívá, že i malé děti mají vyvinutý cit pro spravedlnost.</Moznost4>
+    </Moznosti>
+    <Spravna>D</Spravna>
+</Otazka>
+<Otazka>
+    <Typ>ABC</Typ>
+    <Bodu>1</Bodu>
+    <Ukol> Ve kterém z následujících souvětí je správně zapsána interpunkce?
+</Ukol>
+    <Moznosti>
+        <Moznost1>A) I když s mými názory nesouhlasíte, domnívám se, že je to pouze váš, nikoli můj
+problém.
+</Moznost1>
+        <Moznost2>B) Jestliže naši blízcí cítí, že nás musí převychovávat znamená to, že nás doopravdy
+nemilují takové, jací jsme.
+</Moznost2>
+        <Moznost3>C) Během práce na novém projektu, ředitel veřejně oznámil, že jsem ho zklamal,
+a proto zadal přípravu podkladů mému kolegovi.
+</Moznost3>
+        <Moznost4>D) Jednat v klidu, bez osobních útoků bychom měli zvládnout za každé situace
+a neměli bychom hledět na to, jak agresivního člověka, proti sobě máme.</Moznost4>
+    </Moznosti>
+    <Spravna>A</Spravna>
+</Otazka>
+<Otazka>
+    <Typ>ABC</Typ>
+    <Bodu>1</Bodu>
+    <Ukol> Ve kterém z následujících souvětí je pravopisná chyba?
+</Ukol>
+    <Moznosti>
+        <Moznost1>A) Zjistí-li řidič v průběhu jízdy, že jeho vozidlo nesplňuje výše zmíněné podmínky,
+má povinnost závadu na místě odstranit.
+</Moznost1>
+        <Moznost2>B) Ani hrozba dopadu správního řízení (pokuta až do výše čtyřiceti tisíc korun)
+nedonutila lehkomyslného řidiče, aby si sjednal zákonné pojištění.
+</Moznost2>
+        <Moznost3>C) Kromě toho, že kruhové objezdy přispívají k bezpečnému a plynulému provozu
+na komunikacích, platí na nich také podstatně jednoduší pravidla silničního
+provozu.
+</Moznost3>
+        <Moznost4>D) Úprava zákona o silničním provozu stanovuje, že za nesnížené viditelnosti je
+vyloučeno použití dálkových světel (s výjimkou dávání světelných výstražných
+znamení).</Moznost4>
+    </Moznosti>
+    <Spravna>C</Spravna>
+</Otazka>
+<Otazka>
+    <Typ>ABC</Typ>
+    <Bodu>1</Bodu>
+    <Ukol> Ve které z následujících vět je jazyková chyba?
+</Ukol>
+    <Moznosti>
+        <Moznost1>A) Dívčina pleť byla hladší než sametová látka županu.
+</Moznost1>
+        <Moznost2>B) O sportovní kroužky je letos menší zájem než minulý rok.
+</Moznost2>
+        <Moznost3>C) Při přípravě tohoto pokrmu krájejte brambory na tenší plátky.
+</Moznost3>
+        <Moznost4>D) Bratr si pořídil motocykl k občasným projížďkám na kratší vzdálenosti.</Moznost4>
+    </Moznosti>
+    <Spravna>C</Spravna>
+</Otazka>
+<Otazka>
+    <Typ>ABC</Typ>
+    <Bodu>1</Bodu>
+    <Ukol> Ve které z následujících možností je pravopisná chyba?
+</Ukol>
+    <Moznosti>
+        <Moznost1>A) Besedy s mladými tvůrci mě zaujaly, protože se mi vybavily mé vlastní režijní
+pokusy.
+</Moznost1>
+        <Moznost2>B) Jednodenní semináře pro středoškolské učitele cizích jazyků měli velmi
+pozitivní ohlasy.
+</Moznost2>
+        <Moznost3>C) Jakmile se v tisku zveřejnily detaily příběhu, začaly mezi lidmi kolovat
+neuvěřitelné historky.
+</Moznost3>
+        <Moznost4>D) Zchátrale vyhlížející stodola v sobě skrývala rodinný dům s umně
+začleněnými moderními prvky</Moznost4>
+    </Moznosti>
+    <Spravna>B</Spravna>
+</Otazka>
+<Otazka>
+    <Typ>ABC</Typ>
+    <Bodu>1</Bodu>
+    <Ukol> Ve které z následujících možností se vyskytuje chybně napsané slovo?
+</Ukol>
+    <Moznosti>
+        <Moznost1>A) tajemnější, strmější, dojemnější
+</Moznost1>
+        <Moznost2>B) domněnka, směnka, pomněnka
+</Moznost2>
+        <Moznost3>C) vzájemně, střídmě, soukromně
+</Moznost3>
+        <Moznost4>D) zatemnění, porozumění, uzemnění</Moznost4>
+    </Moznosti>
+    <Spravna>C</Spravna>
+</Otazka>
+
+
+  <Otazka>
+    <Typ>ABC</Typ>
+    <Bodu>1</Bodu>
+    <Ukol>
+      Ve které z následujících vět je pravopisná chyba?
+    </Ukol>
+    <Moznosti>
+      <Moznost1>
+        A) S výstavbou dětského hřiště souvisely rozsáhlé terénní úpravy.
+      </Moznost1>
+      <Moznost2>
+        B) Na denním světle působily vyklizené místnosti skličujícím dojmem.
+      </Moznost2>
+      <Moznost3>
+        C) Noví majitelé restaurace začali lidem nabízet pokrmy z jelenního masa.
+      </Moznost3>
+      <Moznost4>D) Rodiče podezírali nesympatického dceřina přítele z postranních úmyslů.</Moznost4>
+    </Moznosti>
+    <Spravna>C</Spravna>
+  </Otazka>
+  <Otazka>
+    <Typ>ABC</Typ>
+    <Bodu>1</Bodu>
+    <Ukol>
+      Ve které z následujících vět je správně zapsána číslovka?
+    </Ukol>
+    <Moznosti>
+      <Moznost1>
+        A) Karlova univerzita byla založena roku třináctsetčtyřicetosm.
+      </Moznost1>
+      <Moznost2>
+        B) Karlova univerzita byla založena roku třináctset čtyřicet osm.
+      </Moznost2>
+      <Moznost3>
+        C) Karlova univerzita byla založena roku třináct set čtyřicetosm.
+      </Moznost3>
+      <Moznost4>D) Karlova univerzita byla založena roku třináct set čtyřicet osm.</Moznost4>
+    </Moznosti>
+    <Spravna>D</Spravna>
+  </Otazka>
+
+
   <Otazka>
     <Typ>ABC</Typ>
     <Bodu>1</Bodu>

@@ -14,6 +14,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="AdBanner.cs" />
     <Compile Remove="NacitacOtazek.cs" />
     <Compile Remove="NactiOtazku.cs" />
     <Compile Remove="Pages\OtevrenaPage .xaml.cs" />
@@ -41,11 +42,13 @@
     <None Remove="Otazky.xml" />
     <None Remove="Otevrena.xml" />
     <None Remove="OtevrenaText.xml" />
+    <None Remove="Prirazeni.xml" />
     <None Remove="Serazeni.xml" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Grafika\Tick.png" />
+    <EmbeddedResource Include="Prirazeni.xml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -53,8 +56,8 @@
     <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="18.1.0.48" />
     <PackageReference Include="Syncfusion.Xamarin.SfPopupLayout" Version="18.1.0.48" />
     <PackageReference Include="Xam.Plugin.HtmlLabel" Version="3.0.2.2" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.1" />
-    <PackageReference Include="Xamarin.Forms" Version="4.6.0.726" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+    <PackageReference Include="Xamarin.Forms" Version="4.7.0.1239" />
   </ItemGroup>
 
   <ItemGroup>
@@ -64,15 +67,6 @@
     <EmbeddedResource Include="AnoNeTxt.xml" />
     <EmbeddedResource Include="Grafika\Cross.png" />
     <EmbeddedResource Include="Serazeni.xml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="Java.Interop">
-      <HintPath>..\..\..\..\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\ReferenceAssemblies\Microsoft\Framework\MonoAndroid\v1.0\Java.Interop.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Android">
-      <HintPath>..\..\..\..\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\ReferenceAssemblies\Microsoft\Framework\MonoAndroid\v9.0\Mono.Android.dll</HintPath>
-    </Reference>
   </ItemGroup>
 
   <ItemGroup>
@@ -101,7 +95,13 @@
     <EmbeddedResource Update="Pages\OtevrenaTextPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Pages\PrirazeniPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Pages\SerazeniPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\SerazeniPageV2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Pages\TextView.xaml">

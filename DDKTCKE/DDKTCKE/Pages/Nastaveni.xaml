@@ -51,6 +51,13 @@
                        FontSize="Medium"/>
                 <Switch x:Name="AnoNeBox"/>
             </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Přiřazení"
+                       HorizontalOptions="StartAndExpand"
+                       FontSize="Medium"/>
+                <Switch x:Name="PrirazeniBox"/>
+            </StackLayout>
+
             <Label Text="Testy :"
                    VerticalOptions="Start"
                    HorizontalOptions="StartAndExpand"

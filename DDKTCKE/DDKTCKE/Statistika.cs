@@ -18,15 +18,17 @@ namespace DDKTCKE
         //public List<Type> typyOtazek = new List<Type>() { typeof(Pages.ABCPage), typeof(Pages.ABCTextPage), typeof(Pages.OtevrenaTextPage) };
 
         public bool probihaTest = false;
-        private int _Spravnych_odpovedi = 0;
+        private float _Spravnych_odpovedi = 0;
         private int _Celkem_odpovedi = 0;
         private List<int> _ABCHistorie = new List<int>();
         private List<int> _ABCTextHistorie = new List<int>();
         private List<int> _OtevrenaTextHistorie = new List<int>();
         private List<int> _OtevrenaHistorie = new List<int>();
         private List<int> _SerazeniHistorie = new List<int>();
+
         private List<int> _AnoNeHistorie = new List<int>();
         private List<int> _AnoNeTextHistorie = new List<int>();
+        private List<int> _PrirazeniHistorie = new List<int>();
         private string _PosledniText;
 
         public Statistika()
@@ -41,7 +43,7 @@ namespace DDKTCKE
             if (prefs.GetString("ABCHistorie", null) != null)
             {
                 ABCHistorie = prefs.GetString("ABCHistorie", null).TrimEnd(',').Split(',').ToList().Select(int.Parse).ToList(); //převede z list<string> na list<int>
-            }
+            } 
             else
             {
                 ABCHistorie = new List<int>();
@@ -93,6 +95,15 @@ namespace DDKTCKE
             {
                 AnoNeTextHistorie = new List<int>();
             }
+
+            if (prefs.GetString("PrirazeniHistorie", null) != null)
+            {
+                ABCHistorie = prefs.GetString("PrirazeniHistorie", null).TrimEnd(',').Split(',').ToList().Select(int.Parse).ToList(); //převede z list<string> na list<int>
+            }
+            else
+            {
+                ABCHistorie = new List<int>();
+            }
         }
 
         public async void DalsiPage(string text = "")
@@ -116,7 +127,8 @@ namespace DDKTCKE
             String[] Typy;
             if (TypyStr == null)
             {
-                Typy = new String[] { "True", "True", "True", "True", "True", "True" };
+                Typy = new String[] { "True", "True", "True", "True", "True", "True","True"};  //JEDNO NAVÍC
+                //TODO Přidat typ Prirazeni 
             }
             else
             {
@@ -127,10 +139,10 @@ namespace DDKTCKE
             {
                 //Pořadí typů otázek uložených v preferencích ABC,ABCtxt,OtevrenaTxt,AnoNeTxt,Serazeni,Ano/Ne
                 Random rnd = new Random();
-                int p = rnd.Next(0, 6);
+                int p = rnd.Next(0, 7);  //JEDNO JE NAVÍC
                 while (Typy[p] == "False")
                 {
-                    p = rnd.Next(0, 6);
+                    p = rnd.Next(0, 7);
                 }
                 switch (p)
                 {
@@ -147,11 +159,15 @@ namespace DDKTCKE
                         await soucasnaPage.Navigation.PushAsync(new Pages.AnoNeTextPage());
                         break;
                     case 4:
-                        await soucasnaPage.Navigation.PushAsync(new Pages.SerazeniPage());
+                        await soucasnaPage.Navigation.PushAsync(new Pages.SerazeniPageV2());
                         break;
                     case 5:
                         await soucasnaPage.Navigation.PushAsync(new Pages.AnoNePage());
                         break;
+                    case 6:
+                        await soucasnaPage.Navigation.PushAsync(new Pages.PrirazeniPage());
+                        break;
+
                 }
             }
             catch (Exception ex)
@@ -225,15 +241,7 @@ namespace DDKTCKE
 
 
         }
-        /*
-        public ConstructorInfo getConstructorDalsiOtazky()
-        {
-            Random rnd = new Random();
-            Type pageType = Statistika.Current.typyOtazek[rnd.Next(0, Current.typyOtazek.Count)];
-            var constructor = pageType.GetConstructor(Type.EmptyTypes);
-            return constructor;
-        }
-        */
+
 
         public List<int> ABCHistorie
         {
@@ -302,11 +310,20 @@ namespace DDKTCKE
             {
                 _AnoNeTextHistorie = value;
             }
+        }
+
+        public List<int> PrirazeniHistorie
+        {
+            get { return _PrirazeniHistorie; }
+            set
+            {
+                _PrirazeniHistorie = value;
+            }
 
         }
 
 
-        public int Spravnych_odpovedi
+        public float Spravnych_odpovedi
         {
             get { return _Spravnych_odpovedi; }
             set
@@ -333,7 +350,7 @@ namespace DDKTCKE
                 if (_Celkem_odpovedi == 0) { return 0; }
                 else
                 {
-                    float Desetine = ((float)_Spravnych_odpovedi / (float)_Celkem_odpovedi) * 100;
+                    float Desetine = (_Spravnych_odpovedi / (float)_Celkem_odpovedi) * 100;
                     return (int)Desetine;
                 }
             }

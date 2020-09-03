@@ -1,5 +1,104 @@
 <Otazky>
+        <Otazka>
+    <Typ>Serazeni</Typ>
+    <Bodu>3</Bodu>
+    <Ukol> Seřaďte jednotlivé části textu (A–E) za sebou tak, aby byla dodržena textová
+návaznost:
+</Ukol>
+    <Moznosti>
+        <Moznost1>A) Z nosu mi sletěly brýle a odlétly někam daleko. Vstával jsem pomalu, byl jsem
+zašpiněn, na rukou jsem měl sedřenou kůži, ale cítil jsem, že se mi nic vážného
+nestalo. Hmatal jsem po brýlích.
+</Moznost1>
+        <Moznost2>B) Nikdo z nich nemluvil. Bylo slyšet jen skřípavý hlas: „Vystup, svině, nebo…“
+Tramvaj drnčela liduprázdnou ulicí mezi hřbitovní čtvrtí, zastávka byla ještě
+příliš daleko. Muž do mne opět prudce strčil, když jsem byl na schůdcích. Letěl
+jsem několik vteřin, pak jsem zakopl a svalil se na dlažbu.
+</Moznost2>
+        <Moznost3>C) „Vystup, špinavá svině,“ křikl na mne člověk s odznakem na klopě a strčil do
+mne prudce, až jsem se zapotácel. Rozhlédl jsem se po tramvaji. Lidé se dívali
+do země, jako by tam hledali peníz, který se zakutálel pod dřevěnou podložku.
+</Moznost3>
+        <Moznost4>D) Byla pošpiněná, ale její žlutá barva stále ještě svítila do stmívajícího se dne.
+„Aha,“ řekl člověk, „to smějí dělat?“
+„Proč by nesměli,“ řekl jsem. „Sbohem.“
+</Moznost4>
+        <Moznost5>E) Vtom jsem viděl, že mi je někdo podává. „To je hloupost, skákat na tomhle
+místě u hřbitova z jedoucí tramvaje. Copak jste se zbláznil? Mohl jste se zabít.“
+Nechtělo se mi mluvit, ukázal jsem na hvězdu.
+</Moznost5>
+    </Moznosti>
+    <Spravna>CBAED</Spravna>
+    <Zdroj>(J. Weil, Život s hvězdou, upraveno)</Zdroj>
+</Otazka>
 <Otazka>
+    <Typ>Serazeni</Typ>
+    <Bodu>3</Bodu>
+    <Ukol> Seřaďte jednotlivé části textu (A–E) za sebou tak, aby byla dodržena textová
+návaznost:
+</Ukol>
+    <Moznosti>
+        <Moznost1>A) To je slušná práce pro tak mladýho chlápka, zvlášť když uvážíte, jak konzervativní
+banky jsou. A pokud jde o Novou Anglii, musíte tenhle konzervatismus vynásobit
+deseti, protože tady lidi nesvěřej peníze člověku, kterej není plešatej, nekulhá
+a neupravuje si neustále kalhoty, aby měl rovně puky. Andy seděl za vraždu svý
+manželky a jejího milence. Byl to zapeklitej případ.
+</Moznost1>
+        <Moznost2>B) Když Andy přišel v osmačtyřicátým do Shawshanku, bylo mu třicet. Byl to malej
+úhlednej chlápek s pískovejma vlasama a malejma šikovnejma rukama.
+</Moznost2>
+        <Moznost3>C) Prokurátor totiž chtěl kandidovat do sněmovny. Potřeboval proto, aby si
+obyčejnej člověk zapamatoval jeho ksicht. Byl to parádní soudní cirkus, na
+kterej stáli diváci ve frontě od čtyř od rána bez ohledu na minusový teploty, jen
+aby si zajistili místo.
+</Moznost3>
+        <Moznost4>D) Takovej pikantní, se všema správnejma přísadama. Byla v něm nádherná holka
+se společenskejma stykama (mrtvá), známej místní sportovec (taky mrtvej)
+a prominentní mladej bankovní úředník. Celej případ pak skandálně okořenily
+noviny. Pro obžalobu to bylo jednoznačný. Proces trval dost dlouho.
+</Moznost4>
+        <Moznost5>E) Nosil brejle se zlatejma obroučkama a měl vždycky ostříhaný a čistý nehty.
+Je zvláštní, že si tohle člověk pamatuje u chlapa, ale ono mi to Andyho tak
+nějak charakterizuje. Vždycky vypadal, jako že by měl mít kravatu. Venku byl
+viceprezidentem úvěrový sekce velký portlandský banky.
+</Moznost5>
+    </Moznosti>
+    <Spravna>BEADC</Spravna>
+    <Zdroj>(S. King, Rita Hayworthová a vykoupení z věznice Shawshank, upraveno)</Zdroj>
+</Otazka>
+<Otazka>
+    <Typ>Serazeni</Typ>
+    <Bodu>3</Bodu>
+    <Ukol> Seřaďte jednotlivé části textu (A–E) za sebou tak, aby byla dodržena textová
+návaznost:
+</Ukol>
+    <Moznosti>
+        <Moznost1>A) Zcela nepokrytě si do nich začali poznamenávat čísla vozů, zaparkovaných po
+obou stranách vozovky. Sonny se obrátil k otci a pošeptal mu: „Tamti chlapi
+naproti jsou určitě policajti. Všiváci, nic jim není svatý!“
+</Moznost1>
+        <Moznost2>B) Ten však ani nemrkl, jen rozevřel náprsní tašku a ukázal zelenou legitimaci.
+Sonny odstoupil od auta bez jediného slova. Odplivl si tak, aby slina dopadla
+na zadní dvířka limuzíny, a zamířil zpět ke schodům.
+</Moznost2>
+        <Moznost3>C) Don Corleone a jeho syn Sonny stáli na schodech. Zatímco vítali hosty, kteří
+přijeli na svatbu, zastavila na druhé straně vydlážděného náměstíčka černá
+limuzína. Dva muži na předních sedadlech vytáhli ze saka notýsky.
+</Moznost3>
+        <Moznost4>D) Když došel k otci, řekl mu: „Ti chlapi jsou z FBI. Zapisují si čísla všech našich aut.
+Lumpové!“
+</Moznost4>
+        <Moznost5>E) Don Corleone však jen pokrčil rameny. „Ta vozovka mi neříká pane. Můžou si
+tam dělat, co chtějí.“ Sonny zrudl zlostí. Sešel ze schodů a šel přes vozovku
+k černé limuzíně. Vztekle vrazil obličej těsně k obličeji řidiče.
+</Moznost5>
+    </Moznosti>
+    <Spravna>CAEBD</Spravna>
+    <Zdroj>(M. Puzo, Kmotr, upraveno)</Zdroj>
+</Otazka>
+
+
+  <Otazka>
     <Typ>Serazeni</Typ>
     <Bodu>3</Bodu>
     <Ukol> Seřaďte jednotlivé části textu (A–E) za sebou tak, aby byla dodržena textová

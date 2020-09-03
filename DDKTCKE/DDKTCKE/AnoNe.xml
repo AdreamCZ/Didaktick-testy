@@ -1,5 +1,110 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Otazky>
+
+  <Otazka>
+    <Typ>AnoNe</Typ>
+    <Bodu>2</Bodu>
+    <Ukol> Rozhodněte o každé z následujících možností, zda obsahuje pravopisnou
+chybu (A), či nikoli (N):</Ukol>
+    <Moznosti>
+        <Moznost0>
+Na východním pobřeží ostrova je možné spatřit ještě panenskou přírodu
+s písečnými plážemi.
+</Moznost0>
+        <Moznost1>
+Podle stejnojmenného románu byl natočen jeden z nejznámějších
+hororových filmů Osvícení.
+</Moznost1>
+        <Moznost2>
+Odpoledne se na pódiu vystřídaly nejrůznější kapely, po setmění celý
+program spestřil skvělý ohňostroj.
+</Moznost2>
+        <Moznost3>
+Nechvalně proslulý podnikatel, jehož firmy sídlí po celé republice, byl
+obviněn z poškozování cizých práv. </Moznost3>
+    </Moznosti>
+    <Spravna>NNAA</Spravna>
+</Otazka>
+<Otazka>
+    <Typ>AnoNe</Typ>
+    <Bodu>2</Bodu>
+    <Ukol> Rozhodněte o každé z následujících vět, zda je zapsána pravopisně správně (A),
+či nikoli (N):</Ukol>
+    <Moznosti>
+        <Moznost0>
+Na veletrhu Svět knihy vzbudily velký ohlas detektivky ze Severských
+zemí.
+</Moznost0>
+        <Moznost1>
+Filmový festival v Poříčí nad Sázavou zahájila projekce filmu Domácí
+péče.
+</Moznost1>
+        <Moznost2>
+Výstavu Muchova cyklu obrazů Slovanská epopej uspořádala Národní
+galerie v Praze.
+</Moznost2>
+        <Moznost3>
+Rodačka z Českých Budějovic Marta Kubišová musela kvůli začínající
+Normalizaci odejít z veřejného života. </Moznost3>
+    </Moznosti>
+    <Spravna>NAAN</Spravna>
+</Otazka>
+
+
+  <Otazka>
+    <Typ>AnoNe</Typ>
+    <Bodu>2</Bodu>
+    <Ukol> Rozhodněte o každém z následujících tvrzení, zda je pravdivé (A), či nikoli (N):</Ukol>
+    <Moznosti>
+      <Moznost0>
+        Ve větě Mezi těmito dvěma díly není rozdíl je tvar číslovky nespisovný.
+      </Moznost0>
+      <Moznost1>
+        Ve větě Josef II. vydal patent o zrušení nevolnictví je slovo nevolnictví
+        archaické.
+      </Moznost1>
+      <Moznost2>
+        Ve větě Žalobce svůj případ projel na celé čáře je slovo projel užito jako
+        slovo expresivní.
+      </Moznost2>
+      <Moznost3>
+        Ve větě V příručce pro začínající šachisty jsou popsány šachové partie je
+        slovní spojení šachové partie slangové.
+      </Moznost3>
+    </Moznosti>
+    <Spravna>NNAN</Spravna>
+  </Otazka>
+  <Otazka>
+    <Typ>AnoNe</Typ>
+    <Bodu>2</Bodu>
+    <Ukol>
+      Rozhodněte o každém z následujících souvětí, zda obsahuje pravopisnou
+      chybu (A), či nikoli (N):
+    </Ukol>
+    <Moznosti>
+      <Moznost0>
+        Bude-li ochotna vyvinout alespoň nějaké úsilí, cesta k vysněnému cíly
+        pro ni bude daleko snazší.
+      </Moznost0>
+      <Moznost1>
+        Když skončila s líčením svého strastiplného životního příběhu,
+        všichni přítomní se zalykali slzami.
+      </Moznost1>
+      <Moznost2>
+        Uprostřed pralesa objevil několik hliněných domků, v nichž bydleli
+        naštěstí poměrně vstřícní domorodci.
+      </Moznost2>
+      <Moznost3>
+        Nejcennější součástí mé sbírky je půlkilogramový exemplář z ryzího
+        stříbra, na němž jsou motivy australské přírody.
+        9
+        © Centrum pro zjišťování výsledků vzdělávání,
+      </Moznost3>
+    </Moznosti>
+    <Spravna>ANNN</Spravna>
+  </Otazka>
+
+
   <Otazka>
     <Typ>AnoNe</Typ>
     <Bodu>2</Bodu>

@@ -46,6 +46,10 @@ namespace DDKTCKE.Pages
                     UspesnostData.Add(new ChartDataPoint(d, p * 0.01));
                 }
             }
+            if (Test.current.probiha)
+            {
+                Test.current.Ukoncit();
+            }
 
             BindingContext = this;
         }
